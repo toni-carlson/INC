@@ -1,0 +1,64 @@
+.home-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    font-size: 1.8rem;
+    padding: 1rem 3%;
+    text-align: left;
+}
+
+.header {
+    background: url("../../images/lightbulb-background.jpg") no-repeat center; 
+    background-size: cover;
+    color: white;
+    flex-grow: 1;
+    height: max-content;
+    min-height: 45rem;
+    position: relative;
+    text-shadow: 1px 1px 1px black, 0 0 5px black, 0 0 3px orange;
+}
+
+.introduction {
+    background-color: var(--silver);
+}
+
+.quote {
+    background-color: var(--gray);
+    color: white;
+    font-size: 2.4rem;
+}
+
+.caring {
+    /* @TODO: Try to get image to move when scrolling like it was before :) */
+    background: url("../../images/boy-with-wings.jpg") no-repeat center; 
+    background-size: cover;
+    color: white;
+}
+
+.half-section {
+    flex: 1;
+    min-width: 35rem;
+}
+
+.background-dim-overlay {
+    background-color: #101323;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header-content {
+    margin: auto;
+    max-width: 70rem;
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-message {
+    font-size: 5.8rem;
+}
