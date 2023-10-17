@@ -1,0 +1,28 @@
+.page-footer {
+    background-color: #3b3f46;
+    color: white;
+    padding: 2rem;
+}
+
+.page-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a.fb-link {
+    align-items: center;
+    color: #cee3ff;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+}
+
+.fb-link .fb-logo {
+    padding-right: 0.6rem;
+    width: 2.8rem;
+}

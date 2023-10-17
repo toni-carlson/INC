@@ -18,6 +18,7 @@
     min-height: 45rem;
     position: relative;
     text-shadow: 1px 1px 1px black, 0 0 5px black, 0 0 3px orange;
+    width: 100%;
 }
 
 .introduction {
@@ -56,9 +57,36 @@
     margin: auto;
     max-width: 70rem;
     position: relative;
+    text-align: center;
     z-index: 1;
 }
 
 .welcome-message {
     font-size: 5.8rem;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact .free-consultation {
+    background-color: #f7ca65;
+    border-color: #3b3f46;
+    border-radius: 25px;
+    box-shadow: 3px 2px 4px goldenrod;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 13px 29px;
+    text-decoration: none;
+}
+
+.contact .free-consultation:hover {
+    text-decoration: underline;
+}
+
+.contact .helping-hand {
+    object-fit: cover;
+    width: 45%;
 }

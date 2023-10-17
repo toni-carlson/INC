@@ -1,0 +1,9 @@
+.site-map {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-section {
+    display: flex;
+    flex-direction: column;
+}

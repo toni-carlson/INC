@@ -2,6 +2,7 @@ import React from 'react';
 import './HomePage.css';
 import PageHeader from '../../page_header/PageHeader.js';
 import HelpingHand from "../../images/helping-hand.jpg";
+import Logo from '../../images/white-logo-outlined.png';
 
 function HomePage() {
   return (
@@ -99,19 +100,26 @@ function HomePage() {
             </div>
         </div>
         <div className="section contact">
-            <h2>A Better Future</h2>
-            <p>
-                Integrative Neurofeedback and Counseling is here to offer hope and to provide 
-                you with the help you need! With neurofeedback and a customized therapeutic 
-                approach designed to meet your unique and individual needs, the hope of moving 
-                forward is finally within your grasp...
+            <div>
+                <img 
+                    src={Logo} 
+                    alt='Integrative Neurofeedback and Couseling logo'
+                    className='logo'
+                />
+                <h2>A Better Future</h2>
+                <p>
+                    Integrative Neurofeedback and Counseling is here to offer hope and to provide 
+                    you with the help you need! With neurofeedback and a customized therapeutic 
+                    approach designed to meet your unique and individual needs, the hope of moving 
+                    forward is finally within your grasp...
 
-                Contact us TODAY for a FREE in office consultation (a $150 value)! We also offer
-                personal neurofeedback systems for home use! You really do have a good 
-                reason to look ahead to a better quality of life and a better future!
-            </p>
-            <button type="button">Schedule your free consultation!</button>
-            <img src={HelpingHand} alt="hand reaching out with the words 'we help' on it" />
+                    Contact us TODAY for a FREE in office consultation (a $150 value)! We also offer
+                    personal neurofeedback systems for home use! You really do have a good 
+                    reason to look ahead to a better quality of life and a better future!
+                </p>
+                <a href="#" class="free-consultation">Schedule your free consultation &gt;</a>
+            </div>
+            <img src={HelpingHand} class="helping-hand" alt="hand reaching out with the words 'we help' on it" />
         </div>
     </div>
   );
