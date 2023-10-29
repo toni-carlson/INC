@@ -1,11 +1,25 @@
 :root {
   --gray: #757575;
-  --dark-navy: #282c34;
+  --navy: #282c34;
   --silver: #E1E1E1;
+  --dark-navy: #101323;
 }
 
 html {
   font-size: 10px;
+}
+
+.cursive-font {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5.5rem;
+}
+
+.cursive-font.small {
+  font-size: 4rem;
+}
+
+.handwriting-font {
+  font-family: "Charm", cursive;
 }
 
 .App {
@@ -26,7 +40,7 @@ html {
 }
 
 .App-header {
-  background-color: var(--dark-navy);
+  background-color: var(--navy);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

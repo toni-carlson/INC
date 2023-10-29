@@ -5,19 +5,21 @@
 
 .section {
     font-size: 1.8rem;
-    padding: 1rem 3%;
+    padding: 8rem 6%;
     text-align: left;
 }
 
 .header {
-    background: url("../../images/lightbulb-background.jpg") no-repeat center; 
+    background: url("../../images/farmhouse-style-bg.png") no-repeat top; 
+    background-attachment: fixed;
     background-size: cover;
     color: white;
     flex-grow: 1;
     height: max-content;
-    min-height: 45rem;
+    min-height: 70rem;
+    padding-top: 2rem;
     position: relative;
-    text-shadow: 1px 1px 1px black, 0 0 5px black, 0 0 3px orange;
+    text-shadow: 1px 1px 10px var(--dark-navy), 2px 0 5px var(--dark-navy), 0 0 6px orange;
     width: 100%;
 }
 
@@ -26,50 +28,87 @@
 }
 
 .quote {
-    background-color: var(--gray);
-    color: white;
+    background-color: #dacfb6;
+    border: 10px double var(--dark-navy);
+    color: var(--dark-navy);
     font-size: 2.4rem;
+    padding: 2rem 6% 3rem;
+    margin: 0;
+    position: relative;
+    text-shadow: none;
+    width: 100%;
+    z-index: 1;
 }
 
 .caring {
     /* @TODO: Try to get image to move when scrolling like it was before :) */
     background: url("../../images/boy-with-wings.jpg") no-repeat center; 
+    background-attachment: fixed;
     background-size: cover;
     color: white;
 }
 
-.half-section {
-    flex: 1;
-    min-width: 35rem;
-}
-
 .background-dim-overlay {
-    background-color: #101323;
+    background-color: var(--dark-navy);
     height: 100%;
     left: 0;
-    opacity: 0.4;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     width: 100%;
 }
 
 .header-content {
-    margin: auto;
-    max-width: 70rem;
+    margin: 20rem auto 0;
+    max-width: 102rem;
     position: relative;
     text-align: center;
     z-index: 1;
 }
 
+.header-content .welcome {
+    font-size: 5.5rem;
+    line-height: 3rem;
+}
+
+.header-content .cursive-font.small {
+    line-height: normal;
+}
+
 .welcome-message {
-    font-size: 5.8rem;
+    font-size: 7rem;
+    margin: 0 0 10rem;
+}
+
+@media screen and (max-width: 700px) {
+    .welcome-message {
+        font-size: 5rem;
+    }   
 }
 
 .contact {
+    background-color: #dacfb6;
+    border: 10px double var(--dark-navy);
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.contact .free-consultation {
+.contact .contact-text {
+    margin-left: 2rem;
+    max-width: 100%;
+    width: 50%;
+}
+
+.contact .contact-text h2 {
+    margin-top: 0;
+}
+
+.contact .contact-today-text {
+    margin-bottom: 4rem;
+}
+
+.contact .schedule-now {
     background-color: #f7ca65;
     border-color: #3b3f46;
     border-radius: 25px;
@@ -82,11 +121,24 @@
     text-decoration: none;
 }
 
-.contact .free-consultation:hover {
+.contact .schedule-now:hover {
     text-decoration: underline;
 }
 
-.contact .helping-hand {
+.contact .helping-hand-img {
     object-fit: cover;
+    object-position: top;
     width: 45%;
+    max-height: 30rem;
+}
+
+@media screen and (max-width: 491px) {
+    .contact .helping-hand-img,
+    .contact .contact-text {
+        width: 100%;
+    }
+
+    .contact .contact-text {
+        margin-top: 2rem;
+    }
 }

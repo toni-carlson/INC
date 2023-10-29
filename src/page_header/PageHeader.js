@@ -6,6 +6,7 @@ import Logo from '../images/white-logo-outlined.png';
 function PageHeader() {
   return (
      <header className="page-header-topbar">
+        <div className="background-dim-overlay"></div>
         <img 
             src={Logo} 
             alt='Integrative Neurofeedback and Couseling logo'
