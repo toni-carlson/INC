@@ -10,7 +10,7 @@
 }
 
 .header {
-    background: url("../../images/farmhouse-style-bg.png") no-repeat top; 
+    background: url("../../images/farmhouse-style-bg.png") no-repeat top;
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -48,6 +48,14 @@
     color: white;
 }
 
+.caring .cursive-font {
+    transition: color 0.5s ease;
+}
+
+.caring .cursive-font:hover {
+    color: var(--gold);
+}
+
 .background-dim-overlay {
     background-color: var(--dark-navy);
     height: 100%;
@@ -81,9 +89,29 @@
 }
 
 @media screen and (max-width: 700px) {
+    .header-content .welcome,
     .welcome-message {
         font-size: 5rem;
     }   
+}
+
+@media screen and (max-width: 445px) {
+    .header-content .welcome,
+    .welcome-message {
+        font-size: 4rem;
+    }   
+
+    .small {
+        font-size: 3.5rem;
+    }
+
+    .page-header-topbar .company-name {
+        font-size: 2rem;
+    }
+
+    .page-header-topbar .logo {
+        width: 5rem;
+    }
 }
 
 .contact {
@@ -109,19 +137,20 @@
 }
 
 .contact .schedule-now {
-    background-color: #f7ca65;
-    border-color: #3b3f46;
-    border-radius: 25px;
-    box-shadow: 3px 2px 4px goldenrod;
-    color: black;
+    background-color: #fadc98;
+    border-radius: 2.5rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    color: var(--dark-navy);
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
     padding: 13px 29px;
     text-decoration: none;
+    transition: background-color 0.5s ease;
 }
 
 .contact .schedule-now:hover {
+    background-color: var(--gold);
     text-decoration: underline;
 }
 

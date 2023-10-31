@@ -12,10 +12,10 @@ function HomePage() {
             <div className="header-content">
                 <div className="cursive-font welcome">Welcome to</div>
                 <h1 className="welcome-message">
-                    Integrative Neurofeedback and Counseling
+                    Integrative Neurofeedback and&nbsp;Counseling
                 </h1>
                 <div className="cursive-font small">
-                    Repairing Minds. Rebuilding Lives. Restoring Hope.
+                    Repairing&nbsp;Minds. Rebuilding&nbsp;Lives. Restoring&nbsp;Hope.
                 </div>
             </div>
         </div>

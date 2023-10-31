@@ -8,6 +8,7 @@
     position: fixed;
     width: calc(100% - 6%);
     top: 0;
+    text-shadow: none;
     z-index: 10;
 }
 
@@ -18,7 +19,7 @@
 
 .logo {
     color: white;
-    width: 6rem;
+    width: 5.5rem;
 }
 
 .company-name {
@@ -40,5 +41,5 @@
 }
 
 .top-navigation a:hover {
-    color: orange;
+    color: var(--gold);
 }

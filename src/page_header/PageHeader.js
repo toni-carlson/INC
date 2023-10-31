@@ -13,7 +13,7 @@ function PageHeader() {
             className='logo'
         />
         <h2 className="company-name">
-            Integrative Neurofeedback and Counseling
+            Integrative Neurofeedback and&nbsp;Counseling
         </h2>
         <HeaderNavigation />
      </header>
