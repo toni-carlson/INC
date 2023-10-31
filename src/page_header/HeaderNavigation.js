@@ -1,13 +1,14 @@
 import './PageHeader.css';
+import { Link } from 'react-router-dom';
 
 function HeaderNavigation() {
   return (
      <div className="top-navigation">
-        <a href="#">Home</a>
-        <a href="#">Who we help</a>
-        <a href="#">What we offer</a>
-        <a href="#">Who we are</a>
-        <a href="#">Contact us</a>
+         <Link to="/">Home</Link>
+         <Link to="/whowehelp">Who we help</Link>
+         <Link to="/whatweoffer">What we offer</Link>
+         <Link to="/whoweare">Who we are</Link>
+         <Link to="/contactus">Contact us</Link>
      </div>
   );
 }

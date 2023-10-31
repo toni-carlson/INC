@@ -1,4 +1,5 @@
 import React from 'react';
+import PageFooter from '../../page_footer/PageFooter';
 import './HomePage.css';
 import PageHeader from '../../page_header/PageHeader.js';
 import HelpingHand from "../../images/helping-hand.jpg";
@@ -78,6 +79,7 @@ function HomePage() {
                 <a href="#" className="schedule-now">Schedule now &gt;</a>
             </div>
         </div>
+        <PageFooter />
     </div>
   );
 }

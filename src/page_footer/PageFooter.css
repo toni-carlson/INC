@@ -2,6 +2,8 @@
     background-color: #3b3f46;
     color: white;
     padding: 2rem;
+    text-align: center;
+    width: 100%;
 }
 
 .page-footer a {
