@@ -1,15 +1,14 @@
 import React from 'react';
 import './WhatWeOffer.css';
-import PageHeader from '../../page_header/PageHeader.js';
+import FrameLayout from '../../frame_layout/FrameLayout';
 
 function WhatWeOffer() {
   return (
-     <div>
-        <PageHeader />
-        <h1>
+      <FrameLayout>
+         <h1>
             What We Offer
-        </h1>
-     </div>
+         </h1>
+      </FrameLayout>
   );
 }
 

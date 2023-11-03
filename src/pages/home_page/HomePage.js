@@ -1,25 +1,12 @@
 import React from 'react';
-import PageFooter from '../../page_footer/PageFooter';
 import './HomePage.css';
-import PageHeader from '../../page_header/PageHeader.js';
+import FrameLayout from '../../frame_layout/FrameLayout';
+import HomePageHeader from './HomePageHeader';
 import HelpingHand from "../../images/helping-hand.jpg";
 
 function HomePage() {
   return (
-    <div className="home-page">
-        <div className="section header">
-            <div className="background-dim-overlay"></div>
-            <PageHeader />
-            <div className="header-content">
-                <div className="cursive-font welcome">Welcome to</div>
-                <h1 className="welcome-message">
-                    Integrative Neurofeedback and&nbsp;Counseling
-                </h1>
-                <div className="cursive-font small">
-                    Repairing&nbsp;Minds. Rebuilding&nbsp;Lives. Restoring&nbsp;Hope.
-                </div>
-            </div>
-        </div>
+    <FrameLayout customHeader={<HomePageHeader />}>
         <div className="quote">
             <p className="handwriting-font">
                 “Neurofeedback should play a major therapeutic role in many difficult areas. In my opinion, 
@@ -79,8 +66,7 @@ function HomePage() {
                 <a href="#" className="schedule-now">Schedule now &gt;</a>
             </div>
         </div>
-        <PageFooter />
-    </div>
+    </FrameLayout>
   );
 }
 

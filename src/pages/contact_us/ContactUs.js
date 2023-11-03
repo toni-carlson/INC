@@ -1,15 +1,15 @@
 import React from 'react';
-import './WhoWeHelp.css';
+import './ContactUs.css';
 import FrameLayout from '../../frame_layout/FrameLayout';
 
-function WhoWeHelp() {
+function ContactUs() {
   return (
       <FrameLayout>
          <h1>
-         Who We Help
+            Contact Us
          </h1>
       </FrameLayout>
   );
 }
 
-export default WhoWeHelp;
+export default ContactUs;
