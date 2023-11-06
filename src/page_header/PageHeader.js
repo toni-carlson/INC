@@ -5,14 +5,14 @@ import Logo from '../images/white-logo-outlined.png';
 
 function PageHeader() {
   return (
-     <header className="page-header-topbar">
-        <div className="background-dim-overlay"></div>
+     <header className='page-header-topbar'>
+        <div className='background-dim-overlay'></div>
         <img 
             src={Logo} 
             alt='Integrative Neurofeedback and Couseling logo'
             className='logo'
         />
-        <h2 className="company-name">
+        <h2 className='company-name'>
             Integrative Neurofeedback and&nbsp;Counseling
         </h2>
         <HeaderNavigation />

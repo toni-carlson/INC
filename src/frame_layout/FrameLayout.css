@@ -2,3 +2,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.body-slot {
+    margin: 12rem auto 0;
+}

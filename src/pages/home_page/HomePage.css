@@ -18,6 +18,10 @@
     width: 100%;
 }
 
+.header .page-header-topbar .background-dim-overlay {
+    opacity: 0.9;
+}
+
 .introduction {
     background-color: var(--silver);
 }
