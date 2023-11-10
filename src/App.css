@@ -1,26 +1,30 @@
 :root {
-  --gold: #ffbf2f;
-  --gray: #757575;
-  --navy: #282c34;
-  --silver: #E1E1E1;
-  --dark-navy: #101323;
+  --blue: #3d6c8c;
+  --cream: #ddc29d;
+  --gold: #ffb754;
+  --navy: #101323;
 }
 
 html {
   font-size: 10px;
 }
 
+div {
+  font-family: 'Work Sans', sans-serif;
+}
+
 .cursive-font {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Ms Madi', cursive;
   font-size: 5.5rem;
+  letter-spacing: 1px;
 }
 
 .cursive-font.small {
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
 
 .handwriting-font {
-  font-family: "Charm", cursive;
+  font-family: 'Handlee', cursive;
 }
 
 .App {
@@ -41,7 +45,6 @@ html {
 }
 
 .App-header {
-  background-color: var(--navy);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

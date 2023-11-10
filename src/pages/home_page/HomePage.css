@@ -11,10 +11,10 @@
     color: white;
     flex-grow: 1;
     height: max-content;
-    min-height: 70rem;
+    min-height: 66rem;
     padding-top: 2rem;
     position: relative;
-    text-shadow: 1px 1px 10px var(--dark-navy), 2px 0 5px var(--dark-navy), 0 0 6px orange;
+    text-shadow: 0 0 10px var(--navy), 0 0 20px var(--navy), 0 0 6px var(--gold);
     width: 100%;
 }
 
@@ -22,44 +22,52 @@
     opacity: 0.9;
 }
 
-.introduction {
-    background-color: var(--silver);
-}
-
 .quote {
-    background-color: #dacfb6;
-    border: 10px double var(--dark-navy);
-    color: var(--dark-navy);
-    font-size: 2.4rem;
-    padding: 2rem 6% 3rem;
+    background-color: var(--cream);
+    border: 10px double var(--navy);
+    color: var(--navy);
+    font-size: 3rem;
+    padding: 4% 6%;
     margin: 0;
     position: relative;
     text-shadow: none;
-    width: 100%;
     z-index: 1;
 }
 
+.quote p {
+    margin-top: 0;
+}
+
+.quote .author-name {
+    font-size: 2.8rem;
+    text-align: right;
+}
+
+.quote .author-credentials {
+    font-size: 1.6rem;
+    text-align: right;
+}
+
 .caring {
-    /* @TODO: Try to get image to move when scrolling like it was before :) */
     background: url("../../images/boy-with-wings.jpg") no-repeat center; 
     background-attachment: fixed;
     background-size: cover;
     color: white;
 }
 
+.caring .gold-text {
+    color: var(--gold);
+}
+
 .caring .cursive-font {
     transition: color 0.5s ease;
 }
 
-.caring .cursive-font:hover {
-    color: var(--gold);
-}
-
 .background-dim-overlay {
-    background-color: var(--dark-navy);
+    background-color: var(--navy);
     height: 100%;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.6;
     position: absolute;
     top: 0;
     width: 100%;
@@ -74,7 +82,7 @@
 }
 
 .header-content .welcome {
-    font-size: 5.5rem;
+    font-size: 6.4rem;
     line-height: 3rem;
 }
 
@@ -83,8 +91,8 @@
 }
 
 .welcome-message {
-    font-size: 7rem;
-    margin: 0 0 10rem;
+    font-size: 6.8rem;
+    margin: 0 0 12rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -92,6 +100,10 @@
     .welcome-message {
         font-size: 5rem;
     }   
+
+    .welcome-message {
+        margin-bottom: 6rem;
+    }
 }
 
 @media screen and (max-width: 445px) {
@@ -100,8 +112,8 @@
         font-size: 4rem;
     }   
 
-    .small {
-        font-size: 3.5rem;
+    .cursive-font.small {
+        font-size: 4.2rem;
     }
 
     .page-header-topbar .company-name {
@@ -114,15 +126,14 @@
 }
 
 .contact {
-    background-color: #dacfb6;
-    border: 10px double var(--dark-navy);
+    background-color: var(--cream);
+    border: 10px double var(--navy);
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .contact .contact-text {
-    margin-left: 2rem;
+    margin-left: 4%;
     max-width: 100%;
     width: 50%;
 }
@@ -132,14 +143,14 @@
 }
 
 .contact .contact-today-text {
-    margin-bottom: 4rem;
+    margin: 2.4rem 0 4rem;
 }
 
 .contact .schedule-now {
-    background-color: #fadc98;
+    background-color: var(--blue);
     border-radius: 2.5rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    color: var(--dark-navy);
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0px, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
+    color: white;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
@@ -149,7 +160,8 @@
 }
 
 .contact .schedule-now:hover {
-    background-color: var(--gold);
+    background-color: var(--navy);
+    box-shadow: var(--gold) 0 0 8px 2px;
     text-decoration: underline;
 }
 
@@ -167,6 +179,15 @@
     }
 
     .contact .contact-text {
+        margin-left: 0.6rem;
         margin-top: 2rem;
+    }
+
+    .section {
+        padding: 4rem 6%;
+    }
+
+    .quote {
+        font-size: 2.6rem;
     }
 }

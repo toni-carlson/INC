@@ -13,7 +13,7 @@ function HomePageHeader() {
                 Integrative Neurofeedback and&nbsp;Counseling
             </h1>
             <div className="cursive-font small">
-                Repairing&nbsp;Minds. Rebuilding&nbsp;Lives. Restoring&nbsp;Hope.
+                Repairing&nbsp;minds. Rebuilding&nbsp;lives. Restoring&nbsp;hope.
             </div>
         </div>
     </div>

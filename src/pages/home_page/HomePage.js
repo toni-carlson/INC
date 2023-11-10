@@ -16,7 +16,7 @@ function HomePage() {
             <div className='author-name'>
                 Dr. Frank Duffy
             </div>
-            <div className='medium cursive'>
+            <div className='author-credentials'>
                 Professor & Pediatric Neurologist<br />
                 Harvard Medical School
             </div>
@@ -24,7 +24,7 @@ function HomePage() {
         <div className='section caring'>
             <h2>
                 Whatever situation you find yourself in, 
-                we are here for you!
+                <span className='gold-text'> we are here for you!</span>
             </h2>
             <ul>
                 <li>Attention and Focus</li>
@@ -64,7 +64,7 @@ function HomePage() {
                 <p className='contact-today-text'>
                     Contact us today for a FREE consultation in office!
                 </p>
-                <a href='#' className='schedule-now'>Schedule now &gt;</a>
+                <a href='/contactus' className='schedule-now'>Schedule now&nbsp;&nbsp;&gt;</a>
             </div>
         </div>
     </FrameLayout>
