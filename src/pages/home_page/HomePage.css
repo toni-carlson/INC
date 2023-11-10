@@ -56,7 +56,7 @@
 }
 
 .caring .gold-text {
-    color: var(--gold);
+    text-shadow: 0 0 1px var(--navy), 0 0 10px var(--navy), 0 0 6px var(--gold);
 }
 
 .caring .cursive-font {
