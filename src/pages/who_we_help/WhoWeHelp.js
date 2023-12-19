@@ -117,6 +117,7 @@ function WhoWeHelp() {
         { 
           whoWeHelpInfo.map((info) => 
             <ExpandableSection 
+              key={info.heading}
               heading={info.heading} 
               subheading={info.subheading}
               children={info.content}

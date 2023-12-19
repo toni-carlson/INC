@@ -4,5 +4,6 @@
 }
 
 .body-slot {
-    margin: 12rem auto 0;
+    margin: 12rem auto 2rem;
+    padding: 0 2rem;
 }
