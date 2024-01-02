@@ -46,9 +46,8 @@ function HomePage() {
                 After your free, personal consultation, we begin with an initial assessment that will indicate
                 what areas of your brain need to be strengthened. From there, we will customize our approach to 
                 meet your specific, individual needs through a variety of treatment interventions and support 
-                protocols to augment the neurofeedback therapy including individual counseling, cognitive therapy, 
-                anxiety and trauma therapy, nutritional and supplement support, and any cutting edge therapies we
-                might also find helpful.
+                protocols to augment the neurofeedback therapy including individual counseling and coaching, 
+                nutritional and supplement support, and any cutting edge therapies we might also find helpful.
             </p>
             <div className='cursive-font'>
                 We are here for you and ready to help.

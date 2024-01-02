@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 import PageHeader from '../../page_header/PageHeader.js';
+import { orgName } from '../../constants';
 
 function HomePageHeader() {
   return (
@@ -10,7 +11,7 @@ function HomePageHeader() {
         <div className="header-content">
             <div className="cursive-font welcome">Welcome to</div>
             <h1 className="welcome-message">
-                Integrative Neurofeedback and&nbsp;Counseling
+                { orgName }
             </h1>
             <div className="cursive-font small">
                 Repairing&nbsp;minds. Rebuilding&nbsp;lives. Restoring&nbsp;hope.

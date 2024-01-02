@@ -1,0 +1,1 @@
+export const orgName = 'Integrative Neurofeedback &\xa0Counseling';

@@ -2,6 +2,7 @@ import React from 'react';
 import './PageFooter.css';
 import SiteMap from './SiteMap.js';
 import FbLogo from '../images/facebook-icon.png';
+import { orgName } from '../constants';
 
 function PageFooter() {
   return (
@@ -13,7 +14,7 @@ function PageFooter() {
             Facebook
         </a>
         <br /><br />
-        &copy; Integrative Neurofeedback and Counseling, LLC, All Rights Reserved.
+        &copy; { orgName }, LLC, All Rights Reserved.
      </footer>
   );
 }
