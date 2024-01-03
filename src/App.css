@@ -13,10 +13,14 @@ div {
   font-family: 'Work Sans', sans-serif;
 }
 
+a {
+  color: var(--blue);
+}
+
 .cursive-font {
   font-family: 'Ms Madi', cursive;
   font-size: 5.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
 }
 
 .cursive-font.small {

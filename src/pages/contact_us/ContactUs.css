@@ -1,0 +1,35 @@
+.two-col-display {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.left-col {
+    max-width: 60rem;
+}
+
+.right-col {
+    width: 100%;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.form-input label {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.contact-info-list {
+    font-size: 1.6rem;
+    padding-left: 0;
+}
+
+.contact-info-list li {
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0;
+}
