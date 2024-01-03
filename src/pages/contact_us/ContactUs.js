@@ -8,8 +8,8 @@ import { faPhone, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
 function ContactUs() {
    return (
       <FrameLayout>
-         <div className="two-col-display">
-            <div className="left-col">
+         <div className='two-col-display'>
+            <div className='left-col'>
                <h1>
                   Contact Us
                </h1>
@@ -21,20 +21,20 @@ function ContactUs() {
                <br />
                <ContactForm />
             </div>
-            <div className="right-col">
+            <div className='right-col'>
                <h2>Contact Information</h2>
-               <ul className="contact-info-list">
-                  <li className="fusion-li-item">
+               <ul className='contact-info-list'>
+                  <li>
                      <FontAwesomeIcon icon={faPhone} />
                      <span>(317)339-4998</span>
                   </li>
-                  <li className="fusion-li-item">
+                  <li>
                      <FontAwesomeIcon icon={faEnvelope} />
-                     <a href="mailto:integrative.mind.conn@gmail.com" target="_blank" rel="noopener noreferrer">
+                     <a href='mailto:integrative.mind.conn@gmail.com' target='_blank' rel='noopener noreferrer'>
                         integrative.mind.conn@gmail.com
                      </a>
                   </li>
-                  <li className="fusion-li-item">
+                  <li>
                      <FontAwesomeIcon icon={faMap} />
                      <span>
                         680 Patrick Place <br />
@@ -42,6 +42,12 @@ function ContactUs() {
                      </span>
                   </li>
                </ul>
+               <h2>Office hours</h2>
+                  <ul className='office-hours-list'>
+                     <li>Monday - Thursday 9:30AM - 5:30PM</li>
+                     <li>Friday 9:30AM - 4:00PM</li>
+                     <li>Saturday & Sunday CLOSED</li>
+                  </ul>
             </div>
          </div>
       </FrameLayout>

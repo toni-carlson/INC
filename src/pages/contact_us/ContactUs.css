@@ -23,11 +23,13 @@
     margin-bottom: 0.4rem;
 }
 
-.contact-info-list {
+.contact-info-list,
+.office-hours-list {
     font-size: 1.6rem;
     padding-left: 0;
 }
 
+.office-hours-list li,
 .contact-info-list li {
     display: flex;
     gap: 1rem;
