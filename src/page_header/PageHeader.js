@@ -10,7 +10,7 @@ function PageHeader() {
         <div className='background-dim-overlay'></div>
         <img 
           src={Logo} 
-          alt='Integrative Neurofeedback and Couseling logo'
+          alt={orgName + ' logo'}
           className='logo'
         />
         <h2 className='company-name'>
