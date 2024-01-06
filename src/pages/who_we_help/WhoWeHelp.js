@@ -94,7 +94,7 @@ function WhoWeHelp() {
         emotional memory, the hippocampus responsible for long term memory, and prefrontal cortex which modulates\
         emotion. Each of these centers change, negatively impacting brainwave function. Current treatment options\
         include talk therapy and medication but each have their limitations. Talk therapy can take a very long time\
-        to resolve the trauma as many suffers aren’t always aware of the trauma. Medication comes with many side\
+        to resolve the trauma as many suffers aren\'t always aware of the trauma. Medication comes with many side\
         effects and is unable to restore healthy brainwave function.'
     },
     {
@@ -111,21 +111,11 @@ function WhoWeHelp() {
 
   return (
       <FrameLayout>
-         <h1>
+        <h1>
           Who We Help
-         </h1>
-        { 
-          whoWeHelpInfo.map((info) => 
-            <ExpandableSection 
-              key={info.heading}
-              heading={info.heading} 
-              subheading={info.subheading}
-              children={info.content}
-            /> 
-          )
-        }
+        </h1>
         <div>
-          <h2>How can BrainCore Neurofeedback help with these ailments?</h2>
+          <h2>How can BrainCore Neurofeedback help with different ailments?</h2>
           <p>
             Neurofeedback is also known as EEG Biofeedback. It is guided exercise for the brain that is 
             shown to help normalize brainwaves. Neurofeedback is actually a learning modality designed to 
@@ -138,6 +128,16 @@ function WhoWeHelp() {
             improves. The result is an improved ability to remember.
           </p>
         </div>
+        { 
+          whoWeHelpInfo.map((info) => 
+            <ExpandableSection 
+              key={info.heading}
+              heading={info.heading} 
+              subheading={info.subheading}
+              children={info.content}
+            /> 
+          )
+        }
       </FrameLayout>
   );
 }
