@@ -1,6 +1,6 @@
 .page-header-topbar {
     align-items: center;
-    color: white;
+    color: var(--off-white);
     display: inline-flex;
     flex-wrap: wrap;
     font-size: 1.6rem;
@@ -19,7 +19,7 @@
 }
 
 .logo {
-    color: white;
+    color: var(--off-white);
     width: 5.5rem;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .top-navigation a {
-    color: white;
+    color: var(--off-white);
     text-decoration: none;
 }
 

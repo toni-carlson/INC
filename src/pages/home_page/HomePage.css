@@ -8,13 +8,13 @@
     background: url("../../images/farmhouse-style-bg.png") no-repeat top;
     background-attachment: fixed;
     background-size: cover;
-    color: white;
+    color: var(--off-white);
     flex-grow: 1;
     height: max-content;
     min-height: 66rem;
     padding-top: 2rem;
     position: relative;
-    text-shadow: 0 0 10px var(--navy), 0 0 20px var(--navy), 0 0 6px var(--gold);
+    text-shadow: 0 0 12px var(--navy), 0 0 16px var(--navy), 0 0 4px var(--gold);
     width: 100%;
 }
 
@@ -51,11 +51,11 @@
     background: url("../../images/boy-with-wings.jpg") no-repeat center; 
     background-attachment: fixed;
     background-size: cover;
-    color: white;
+    color: var(--off-white);
 }
 
 .caring .gold-text {
-    text-shadow: 0 0 1px var(--navy), 0 0 10px var(--navy), 0 0 6px var(--gold);
+    text-shadow: 0 0 2px var(--navy), 0 0 10px var(--navy), 0 0 6px var(--gold);
 }
 
 .caring .cursive-font {
@@ -130,8 +130,10 @@
 }
 
 .contact {
-    background-color: var(--cream);
-    border: 10px double var(--navy);
+    background-color: #151726;
+    border-top: 6px double var(--off-white);
+    border-bottom: 12px solid var(--off-white);
+    color: var(--off-white);
     display: flex;
     flex-wrap: wrap;
 }
@@ -152,11 +154,11 @@
 
 .contact .schedule-now {
     background-color: var(--blue);
-    border-radius: 2.5rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0px, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
-    color: white;
+    border-radius: 0.8rem;
+    box-shadow: rgba(135, 110, 83, 0.3) 0 1px 2px 0px, rgba(135, 110, 83, 0.15) 0 2px 6px 2px;
+    color: var(--off-white);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 17px;
     padding: 13px 29px;
     text-decoration: none;
@@ -164,8 +166,9 @@
 }
 
 .contact .schedule-now:hover {
-    background-color: var(--navy);
-    box-shadow: var(--gold) 0 0 8px 2px;
+    background-color: var(--gold);
+    box-shadow: rgb(135, 110, 83) 0 0 8px 2px;
+    color: var(--navy);
     text-decoration: underline;
 }
 

@@ -1,24 +1,24 @@
 .page-footer {
-    background-color: #3b3f46;
-    color: white;
+    background-color: var(--dark-teal);
+    color: var(--off-white);
     padding: 2rem;
     text-align: center;
     width: 100%;
 }
 
 .page-footer a {
-    color: white;
+    color: var(--off-white);
     text-decoration: none;
 }
 
 .page-footer a:hover {
-    color: white;
+    color: var(--off-white);
     text-decoration: underline;
 }
 
 a.fb-link {
     align-items: center;
-    color: #cee3ff;
+    color: #d5e2eb;
     display: flex;
     font-size: 1.6rem;
     justify-content: center;

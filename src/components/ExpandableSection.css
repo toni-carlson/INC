@@ -3,7 +3,7 @@
 }
 
 .expandable-container .expandable-header {
-    background-color: white;
+    background-color: var(--off-white);
     border-radius: 3px;
     display: inline-flex;
     justify-content: space-between;

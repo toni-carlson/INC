@@ -1,11 +1,14 @@
 :root {
-  --blue: #3d6c8c;
-  --cream: #dbc5a6;
-  --gold: #ffb754;
+  --blue: #4a728e;
+  --cream: #fffcf7;
+  --dark-teal: #222e34;
+  --gold: #e2b479;
   --navy: #101323;
+  --off-white: #f5f4f2;
 }
 
 html {
+  color: var(--navy);
   font-size: 10px;
 }
 
@@ -55,7 +58,7 @@ a {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--off-white);
 }
 
 .App-link {
