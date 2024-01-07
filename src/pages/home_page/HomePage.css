@@ -27,25 +27,24 @@
     border: 10px double var(--navy);
     color: var(--navy);
     font-size: 3rem;
-    padding: 4% 6%;
+    padding: 4% 16%;
     margin: 0;
     position: relative;
+    text-align: center;
     text-shadow: none;
     z-index: 1;
 }
 
-.quote p {
-    margin-top: 0;
+.quote .handwriting-font {
+    margin: 0 auto 1.6rem;
 }
 
 .quote .author-name {
     font-size: 2.8rem;
-    text-align: right;
 }
 
 .quote .author-credentials {
     font-size: 1.6rem;
-    text-align: right;
 }
 
 .caring {
@@ -84,31 +83,36 @@
 .header-content .welcome {
     font-size: 6.4rem;
     line-height: 3rem;
+    margin-bottom: 6rem;
 }
 
 .header-content .cursive-font.small {
     line-height: normal;
 }
 
-.welcome-message {
+.welcome-org-name {
     font-size: 6.8rem;
-    margin: 0 0 12rem;
+    margin: 0 0 8rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
+    .header-content {
+        margin-top: 16rem;
+    }
+
     .header-content .welcome,
-    .welcome-message {
+    .welcome-org-name {
         font-size: 5rem;
     }   
 
-    .welcome-message {
+    .welcome-org-name {
         margin-bottom: 6rem;
     }
 }
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 576px) {
     .header-content .welcome,
-    .welcome-message {
+    .welcome-org-name {
         font-size: 4rem;
     }   
 
@@ -189,5 +193,6 @@
 
     .quote {
         font-size: 2.6rem;
+        padding: 6% 8%;
     }
 }
