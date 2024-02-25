@@ -1,7 +1,9 @@
 import React from 'react';
 import './WhoWeHelp.css';
 import FrameLayout from '../../frame_layout/FrameLayout';
-import ExpandableSection from '../../components/ExpandableSection';
+import ExpandableSection from './components/ExpandableSection';
+import { useState, useEffect } from 'react';
+import { getValue } from '@testing-library/user-event/dist/utils';
 
 function WhoWeHelp() {
   const whoWeHelpInfo = [
@@ -128,17 +130,19 @@ function WhoWeHelp() {
             improves. The result is an improved ability to remember.
           </p>
         </div>
-        {
-          whoWeHelpInfo.map((info, index) =>
-            <ExpandableSection
-              key={index}
-              id={`section-${index}`}
-              heading={info.heading}
-              subheading={info.subheading}
-              children={info.content}
-            />
-          )
-        }
+        <div className='cards-container'>
+          {
+            whoWeHelpInfo.map((info, index) =>
+              <ExpandableSection
+                key={index}
+                id={`section-${index}`}
+                heading={info.heading}
+                subheading={info.subheading}
+                children={info.content}
+              />
+            )
+          }
+        </div>
       </FrameLayout>
   );
 }
