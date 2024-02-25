@@ -11,7 +11,7 @@
     text-decoration: none;
 }
 
-.page-footer a:hover {
+.page-footer a:is(:hover, :focus-visible) {
     color: var(--off-white);
     text-decoration: underline;
 }

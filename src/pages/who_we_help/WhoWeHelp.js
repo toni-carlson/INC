@@ -5,7 +5,7 @@ import ExpandableSection from '../../components/ExpandableSection';
 
 function WhoWeHelp() {
   const whoWeHelpInfo = [
-    { 
+    {
       heading: 'Attention and Focus',
       subheading: 'What does a lack of attention and focus look like?',
       content: 'What attention and focus issues look like in a person struggling with this disorder\
@@ -13,7 +13,7 @@ function WhoWeHelp() {
         frustrated. Attention and focus problems can cause anger outbursts, difficulty completing\
         tasks, restlessness and the inability to socially engage or connect.'
     },
-    { 
+    {
       heading: 'Mental Stress',
       subheading: 'How does mental stress affect my brain?',
       content: 'Due to our environment and the ongoing stressors impacting the body every second of every\
@@ -22,7 +22,7 @@ function WhoWeHelp() {
         suffering with mental stress can create abnormal responses to incoming stimuli. Neurofeedback\
         is shown to normalize brainwaves.'
     },
-    { 
+    {
       heading: 'Negative Moods',
       subheading: 'Are you struggling with the symptoms of negative moods?',
       content: 'If you have been struggling with negative moods, you\'re not alone. More than 19 million adults\
@@ -117,25 +117,26 @@ function WhoWeHelp() {
         <div>
           <h2>How can BrainCore Neurofeedback help with different ailments?</h2>
           <p>
-            Neurofeedback is also known as EEG Biofeedback. It is guided exercise for the brain that is 
-            shown to help normalize brainwaves. Neurofeedback is actually a learning modality designed to 
-            retrain abnormal brainwave patterns. The goal of all neurofeedback is to transform an unhealthy, 
-            abnormal brainwave pattern into a normal, healthy, organized pattern. By doing this, the brain 
-            becomes more stable and is able to operate optimally and efficiently. Neuroplasticity is your 
-            brain's ability to create new neural pathways. This puts you in the driver's seat of reclaiming 
-            and optimizing your health. Your brain is not hard-wired, it is not limited or fixed in it's 
-            abilities to heal. When the imbalance is removed and brainwaves are regulated, cognitive function 
+            Neurofeedback is also known as EEG Biofeedback. It is guided exercise for the brain that is
+            shown to help normalize brainwaves. Neurofeedback is actually a learning modality designed to
+            retrain abnormal brainwave patterns. The goal of all neurofeedback is to transform an unhealthy,
+            abnormal brainwave pattern into a normal, healthy, organized pattern. By doing this, the brain
+            becomes more stable and is able to operate optimally and efficiently. Neuroplasticity is your
+            brain's ability to create new neural pathways. This puts you in the driver's seat of reclaiming
+            and optimizing your health. Your brain is not hard-wired, it is not limited or fixed in it's
+            abilities to heal. When the imbalance is removed and brainwaves are regulated, cognitive function
             improves. The result is an improved ability to remember.
           </p>
         </div>
-        { 
-          whoWeHelpInfo.map((info) => 
-            <ExpandableSection 
-              key={info.heading}
-              heading={info.heading} 
+        {
+          whoWeHelpInfo.map((info, index) =>
+            <ExpandableSection
+              key={index}
+              id={`section-${index}`}
+              heading={info.heading}
               subheading={info.subheading}
               children={info.content}
-            /> 
+            />
           )
         }
       </FrameLayout>

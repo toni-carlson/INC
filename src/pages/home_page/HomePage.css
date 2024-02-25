@@ -48,7 +48,7 @@
 }
 
 .caring {
-    background: url("../../images/boy-with-wings.jpg") no-repeat center; 
+    background: url("../../images/boy-with-wings.jpg") no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     color: var(--off-white);
@@ -103,7 +103,7 @@
     .header-content .welcome,
     .welcome-org-name {
         font-size: 5rem;
-    }   
+    }
 
     .welcome-org-name {
         margin-bottom: 6rem;
@@ -114,7 +114,7 @@
     .header-content .welcome,
     .welcome-org-name {
         font-size: 4rem;
-    }   
+    }
 
     .cursive-font.small {
         font-size: 4.2rem;
@@ -165,7 +165,7 @@
     transition: background-color 0.5s ease;
 }
 
-.contact .schedule-now:hover {
+.contact .schedule-now:is(:hover, :focus-visible) {
     background-color: var(--gold);
     box-shadow: rgb(135, 110, 83) 0 0 8px 2px;
     color: var(--navy);
