@@ -5,12 +5,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function HoverableCard({id, icon, heading, subheading, children}) {
   const [isHovered, setIsHovered] = useState(false);
 
-  function showHoveredContents(e) {
-    setIsHovered(true);
+  function showHoveredContents() {
+    setTimeout(() => {
+      setIsHovered(true);
+    }, 100);
   }
 
-  function showHeading(e) {
-    setIsHovered(false);
+  function showHeading() {
+    setTimeout(() => {
+      setIsHovered(false);
+    }, 150);
   }
 
   function scroll(e) {
@@ -38,18 +42,16 @@ function HoverableCard({id, icon, heading, subheading, children}) {
         onKeyDown={scroll}
       >
         { !isHovered ?
-        <>
-          <FontAwesomeIcon icon={icon} className='icon' />
-          <h2>{heading}</h2>
-        </> :
-        <>
+          <>
+            <FontAwesomeIcon icon={icon} className='icon' />
+            <h2>{heading}</h2>
+          </> :
           <div className='hovered-contents'>
             <h2>{subheading}</h2>
             <p>
               {children}
             </p>
           </div>
-        </>
         }
       </div>
     </>

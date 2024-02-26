@@ -55,10 +55,6 @@
     text-decoration: underline;
 }
 
-.top-navigation-mobile .dropdown-menu.closed {
-    display: none;
-}
-
 @media (max-width: 576px) {
     .top-navigation-mobile .dropdown-menu {
         height: 43%;
