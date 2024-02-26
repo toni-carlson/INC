@@ -1,0 +1,64 @@
+.hoverable-container {
+    align-items: center;
+    background-color: var(--off-white);
+    border: 3px solid var(--navy);
+    border-radius: 4px;
+    box-shadow: var(--default-shadow);
+    color: var(--navy);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20rem;
+    min-width: 28rem;
+    padding: 0;
+    width: 31%;
+}
+
+.hoverable-container > h2 {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+}
+
+.hoverable-container .icon {
+    font-size: 4.8rem;
+}
+
+.hoverable-container:is(:hover, :focus-visible) {
+    box-shadow: 0 1px 22px 1px #e2b479, 0 4px 6px -4px #e2b479;
+}
+
+.hovered-contents {
+    --padding: 1.6rem;
+    user-select: text;
+    height: calc(100% - (var(--padding)*2));
+    overflow-y: auto;
+    padding: var(--padding);
+}
+
+.hovered-contents::-webkit-scrollbar {
+    width: 1.8rem;
+}
+
+.hovered-contents::-webkit-scrollbar-track {
+    border-left: 1px solid var(--dark-teal);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.hovered-contents::-webkit-scrollbar-thumb {
+    background-color: var(--light-gold);
+    border: 1px solid var(--dark-teal);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px var(--gold);
+}
+
+.hovered-contents h2 {
+    margin: 0 0 12px 0;
+}
+
+.hovered-contents p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 0;
+    text-align: left;
+}
