@@ -14,8 +14,8 @@ function ContactUs() {
                   Contact Us
                </h1>
                <p>
-                  Integrative Mind Connections is located in Brownsburg, Indiana on the west side of Indianapolis 
-                  just off I-74 in the Data Comm building. Contact us today to schedule your FREE in office consultation. 
+                  Integrative Mind Connections is located in Brownsburg, Indiana on the west side of Indianapolis
+                  just off I-74 in the Data Comm building. Contact us today to schedule your FREE in office consultation.
                </p>
                <div className='cursive-font'>Your better tomorrow begins today!</div>
                <br />
@@ -26,7 +26,7 @@ function ContactUs() {
                <ul className='contact-info-list'>
                   <li>
                      <FontAwesomeIcon icon={faPhone} />
-                     <span>(317)339-4998</span>
+                     <span>(317) 339-4998</span>
                   </li>
                   <li>
                      <FontAwesomeIcon icon={faEnvelope} />

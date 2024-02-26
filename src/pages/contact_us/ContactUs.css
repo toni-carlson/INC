@@ -35,3 +35,36 @@
     gap: 1rem;
     padding: 0.6rem 0;
 }
+
+p {
+    font-size: 16px;
+    line-height: 2rem;
+}
+
+label,
+input,
+textarea {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+.submit-form {
+    background-color: var(--navy);
+    border: 1px solid var(--navy);
+    border-radius: 0.8rem;
+    box-shadow: rgba(135, 110, 83, 0.3) 0 1px 2px 0px, rgba(135, 110, 83, 0.15) 0 2px 6px 2px;
+    color: var(--off-white);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 13px 29px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+.submit-form:is(:hover, :focus-visible) {
+    background-color: var(--gold);
+    box-shadow: rgb(135, 110, 83) 0 0 8px 2px;
+    color: var(--navy);
+}
