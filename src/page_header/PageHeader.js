@@ -19,9 +19,9 @@ function PageHeader() {
           { orgName }
         </h2>
         <MediaQuery minWidth={1130}>
-          <div className='top-navigation'>
+          <nav className='top-navigation' aria-label='main'>
             <NavLinks />
-          </div>
+          </nav>
         </MediaQuery>
         <MediaQuery maxWidth={1130}>
           <MobileHeaderNavigation />

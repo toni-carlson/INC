@@ -12,14 +12,14 @@ function MobileHeaderNavigation() {
     },[isOpen]);
 
     return (
-        <div className='top-navigation-mobile'>
-            <button type='button' onClick={()=> setIsOpen(!isOpen)} aria-expanded={isOpen} aria-controls='mobile-nav'>
+        <nav className='top-navigation-mobile' aria-label='main'>
+            <button type='button' onClick={()=> setIsOpen(!isOpen)} aria-label='Menu' aria-expanded={isOpen} aria-controls='mobile-nav'>
                 <FontAwesomeIcon icon={faBars} />
             </button>
             <div id='mobile-nav' className='dropdown-menu' ref={container}>
                 <NavLinks closeMenu={()=> setIsOpen(!isOpen)} />
             </div>
-        </div>
+        </nav>
     );
 }
 
