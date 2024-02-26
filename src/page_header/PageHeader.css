@@ -44,3 +44,19 @@
 .top-navigation a:hover {
     color: var(--gold);
 }
+
+@media screen and (max-width: 576px) {
+    .page-header-topbar .company-name {
+        font-size: 2rem;
+    }
+
+    .page-header-topbar .logo {
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .page-header-topbar .company-name {
+        font-size: 1.8rem;
+    }
+}

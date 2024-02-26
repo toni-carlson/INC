@@ -97,40 +97,6 @@
     margin: 0 0 8rem;
 }
 
-@media screen and (max-width: 768px) {
-    .header-content {
-        margin-top: 16rem;
-    }
-
-    .header-content .welcome,
-    .welcome-org-name {
-        font-size: 5rem;
-    }
-
-    .welcome-org-name {
-        margin-bottom: 6rem;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .header-content .welcome,
-    .welcome-org-name {
-        font-size: 4rem;
-    }
-
-    .cursive-font.small {
-        font-size: 4.2rem;
-    }
-
-    .page-header-topbar .company-name {
-        font-size: 2rem;
-    }
-
-    .page-header-topbar .logo {
-        width: 5rem;
-    }
-}
-
 .contact {
     background-color: #151726;
     border-top: 6px double var(--off-white);
@@ -179,6 +145,32 @@
     object-position: top;
     width: 45%;
     max-height: 30rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        margin-top: 16rem;
+    }
+
+    .header-content .welcome,
+    .welcome-org-name {
+        font-size: 5rem;
+    }
+
+    .welcome-org-name {
+        margin-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header-content .welcome,
+    .welcome-org-name {
+        font-size: 4rem;
+    }
+
+    .cursive-font.small {
+        font-size: 4.2rem;
+    }
 }
 
 @media screen and (max-width: 491px) {
