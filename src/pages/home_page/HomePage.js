@@ -3,14 +3,16 @@ import './HomePage.css';
 import FrameLayout from '../../frame_layout/FrameLayout';
 import HomePageHeader from './HomePageHeader';
 import HelpingHand from '../../images/helping-hand.jpg';
+import { ailmentsInfo } from '../../constants';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function HomePage() {
   return (
     <FrameLayout customHeader={<HomePageHeader />}>
         <div className='quote'>
             <p className='handwriting-font'>
-                “Neurofeedback should play a major therapeutic role in many difficult areas. In my opinion, 
-                if any medication had demonstrated such a wide spectrum of efficacy it would be universally 
+                “Neurofeedback should play a major therapeutic role in many difficult areas. In my opinion,
+                if any medication had demonstrated such a wide spectrum of efficacy it would be universally
                 accepted and widely used.'
             </p>
             <div className='author-name'>
@@ -23,7 +25,7 @@ function HomePage() {
         </div>
         <div className='section caring'>
             <h2>
-                Whatever situation you find yourself in, 
+                Whatever situation you find yourself in,
                 <span className='gold-text'> we are here for you!</span>
             </h2>
             <ul>
@@ -38,19 +40,35 @@ function HomePage() {
                 <li>Substance Abuse</li>
             </ul>
             <p>
-                Whatever mental, emotional, or neurological challenge you or someone you love might be 
-                struggling with, we commit to listen fully, genuinely care, and walk alongside of you as 
-                you move towards resolving your challenges. 
+                Whatever mental, emotional, or neurological challenge you or someone you love might be
+                struggling with, we commit to listen fully, genuinely care, and walk alongside of you as
+                you move towards resolving your challenges.
             </p>
             <p>
                 After your free, personal consultation, we begin with an initial assessment that will indicate
-                what areas of your brain need to be strengthened. From there, we will customize our approach to 
-                meet your specific, individual needs through a variety of treatment interventions and support 
-                protocols to augment the neurofeedback therapy including individual counseling and coaching, 
+                what areas of your brain need to be strengthened. From there, we will customize our approach to
+                meet your specific, individual needs through a variety of treatment interventions and support
+                protocols to augment the neurofeedback therapy including individual counseling and coaching,
                 nutritional and supplement support, and any cutting edge therapies we might also find helpful.
             </p>
-            <div className='cursive-font'>
+            <div className='cursive-font' style={{ fontFamily: 'Ms Madi' }}>
                 We are here for you and ready to help.
+            </div>
+        </div>
+        <div className='section ailments'>
+            <h2>Learn more about how we can help:</h2>
+            <div className="who-we-help-links">
+                {
+                    ailmentsInfo.map((info, index) =>
+                        <a
+                            key={index}
+                            href={'/whowehelp#' + info.heading.replaceAll(" ", "-").toLowerCase()}
+                        >
+                            <FontAwesomeIcon icon={info.icon} className='icon' />
+                            <span>{info.heading}</span>
+                        </a>
+                    )
+                }
             </div>
         </div>
         <div className='section contact'>

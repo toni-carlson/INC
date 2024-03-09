@@ -4,11 +4,16 @@
     text-align: left;
 }
 
+.section h2 {
+    font-size: 3.2rem;
+    margin-top: 0;
+}
+
 .header {
     background: url("../../images/farmhouse-style-bg.png") no-repeat top;
     background-attachment: fixed;
     background-size: cover;
-    color: var(--off-white);
+    color: var(--white);
     flex-grow: 1;
     height: max-content;
     min-height: 66rem;
@@ -24,7 +29,9 @@
 
 .quote {
     background-color: var(--cream);
-    border: 10px double var(--navy);
+    border: 1.6rem solid var(--navy);
+    border-left: 0;
+    border-right: 0;
     color: var(--navy);
     font-size: 3rem;
     padding: 4% 16%;
@@ -53,15 +60,64 @@
     background: url("../../images/boy-with-wings.jpg") no-repeat center;
     background-attachment: fixed;
     background-size: cover;
-    color: var(--off-white);
+    color: var(--white);
 }
 
 .caring .gold-text {
-    text-shadow: 0 0 2px var(--navy), 0 0 10px var(--navy), 0 0 6px var(--gold);
+    text-shadow: 0 0 2px var(--navy), 0 0 1px var(--gold), 0 0 6px var(--gold);
 }
 
 .caring .cursive-font {
     transition: color 0.5s ease;
+}
+
+.ailments {
+    background-color: var(--cream);
+    border: 1.6rem solid var(--navy);
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+}
+
+.ailments h2 {
+    margin-bottom: 6rem;
+}
+
+.who-we-help-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.ailments a {
+    align-items: center;
+    background-color: var(--light-gray);
+    border: 3px solid var(--navy);
+    border-radius: 4px;
+    box-shadow: var(--default-shadow);
+    color: var(--navy);
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 16px;
+    justify-content: center;
+    height: 10rem;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 16rem;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+.ailments a .icon {
+    font-size: 4rem;
+}
+
+.ailments a:hover {
+    box-shadow: var(--hover-shadow);
+    text-decoration: underline;
 }
 
 .background-dim-overlay {
@@ -98,10 +154,11 @@
 }
 
 .contact {
-    background-color: #151726;
-    border-top: 6px double var(--off-white);
-    border-bottom: 12px solid var(--off-white);
-    color: var(--off-white);
+    background-color: var(--navy);
+    border: 0.4rem solid var(--gold);
+    border-left: 0;
+    border-right: 0;
+    color: var(--light-gray);
     display: flex;
     flex-wrap: wrap;
 }
@@ -112,30 +169,29 @@
     width: 50%;
 }
 
-.contact .contact-text h2 {
-    margin-top: 0;
+.contact .handwriting-font {
+    font-size: 2.4rem;
 }
 
 .contact .contact-today-text {
-    margin: 2.4rem 0 4rem;
+    margin: 2.4rem 0 4.4rem;
 }
 
 .contact .schedule-now {
     background-color: var(--blue);
-    border-radius: 0.8rem;
+    border-radius: 1.8rem;
     box-shadow: rgba(135, 110, 83, 0.3) 0 1px 2px 0px, rgba(135, 110, 83, 0.15) 0 2px 6px 2px;
-    color: var(--off-white);
-    font-size: 14px;
+    color: var(--white);
+    font-size: 2.2rem;
     font-weight: bold;
-    line-height: 17px;
-    padding: 13px 29px;
+    padding: 1.8rem 3rem;
     text-decoration: none;
-    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .contact .schedule-now:is(:hover, :focus-visible) {
     background-color: var(--gold);
-    box-shadow: rgb(135, 110, 83) 0 0 8px 2px;
+    box-shadow: var(--light-gold) 0 0 8px 2px;
     color: var(--navy);
     text-decoration: underline;
 }

@@ -1,18 +1,19 @@
 .page-footer {
-    background-color: var(--dark-teal);
-    color: var(--off-white);
+    background-color: var(--navy);
+    color: var(--white);
+    margin-top: auto;
     padding: 2rem;
     text-align: center;
     width: 100%;
 }
 
 .page-footer a {
-    color: var(--off-white);
+    color: var(--white);
     text-decoration: none;
 }
 
 .page-footer a:is(:hover, :focus-visible) {
-    color: var(--off-white);
+    color: var(--white);
     text-decoration: underline;
 }
 

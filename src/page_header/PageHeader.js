@@ -18,12 +18,12 @@ function PageHeader() {
         <h2 className='company-name'>
           { orgName }
         </h2>
-        <MediaQuery minWidth={1130}>
+        <MediaQuery minWidth={1000}>
           <nav className='top-navigation' aria-label='main'>
             <NavLinks />
           </nav>
         </MediaQuery>
-        <MediaQuery maxWidth={1130}>
+        <MediaQuery maxWidth={1000}>
           <MobileHeaderNavigation />
         </MediaQuery>
      </header>

@@ -5,9 +5,9 @@
 
 .top-navigation-mobile button {
     background-color: inherit;
-    border: 1px solid var(--off-white);
+    border: 1px solid var(--white);
     border-radius: 4px;
-    color: var(--off-white);
+    color: var(--white);
     cursor: pointer;
     font-size: 22px;
     height: 100%;
@@ -17,12 +17,12 @@
 
 .top-navigation-mobile button:is(:hover, :focus-visible) {
     background-color: var(--dark-teal);
-    border-color: var(--off-white);
-    color: var(--off-white);
+    border-color: var(--white);
+    color: var(--white);
 }
 
 .top-navigation-mobile button[aria-expanded='true'] {
-    background-color: var(--cream);
+    background-color: var(--light-gold);
     color: var(--navy);
     border-color: var(--navy);
 }
@@ -32,7 +32,7 @@
 }
 
 .top-navigation-mobile .dropdown-menu {
-    background-color: var(--off-white);
+    background-color: var(--white);
     border: 1px solid var(--navy);
     border-radius: 2px;
     box-shadow: var(--default-shadow);

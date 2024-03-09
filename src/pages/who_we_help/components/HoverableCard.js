@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
 import './HoverableCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
-function HoverableCard({id, icon, heading, subheading, children}) {
+function HoverableCard({icon, heading, subheading, children}) {
+  const headingFormatted = heading.replaceAll(" ", "-").toLowerCase();
   const [isHovered, setIsHovered] = useState(false);
 
-  function showHoveredContents() {
-    setTimeout(() => {
+  window.addEventListener("load", () => {
+    if (window.location.href.indexOf(headingFormatted) > -1) {
       setIsHovered(true);
+    }
+  });
+
+  function toggleCard() {
+    setTimeout(() => {
+      setIsHovered(!isHovered);
     }, 100);
   }
 
-  function showHeading() {
-    setTimeout(() => {
-      setIsHovered(false);
-    }, 150);
-  }
+  function handleKeydown(e) {
+    const currentContents = e.currentTarget.querySelector('.hovered-contents p');
 
-  function scroll(e) {
-    const currentContents = e.currentTarget.querySelector('.hovered-contents');
-
+    // scroll contents
     if (e.key === "ArrowDown") {
       e.preventDefault();
       currentContents.scrollTop = currentContents.scrollTop + 20;
@@ -32,14 +35,13 @@ function HoverableCard({id, icon, heading, subheading, children}) {
   return (
     <>
       <div
-        className='hoverable-container'
-        tabIndex='0'
+        id={headingFormatted}
+        className={'hoverable-container' + (isHovered ? ' hovered' : '')}
+        tabIndex="0"
         role='presentation'
-        onFocus={showHoveredContents}
-        onMouseEnter={showHoveredContents}
-        onBlur={showHeading}
-        onMouseLeave={showHeading}
-        onKeyDown={scroll}
+        onClick={isHovered ? null : toggleCard}
+        onKeyDown={handleKeydown}
+        ref={card => card && isHovered && card.focus()}
       >
         { !isHovered ?
           <>
@@ -47,7 +49,16 @@ function HoverableCard({id, icon, heading, subheading, children}) {
             <h2>{heading}</h2>
           </> :
           <div className='hovered-contents'>
-            <h2>{subheading}</h2>
+            <div className='contents-header'>
+              <h3>{subheading}</h3>
+              <button
+                className='close-button'
+                onClick={toggleCard}
+              >
+                <FontAwesomeIcon icon={faCircleXmark} />
+                <span className='close-label'>Close</span>
+              </button>
+            </div>
             <p>
               {children}
             </p>

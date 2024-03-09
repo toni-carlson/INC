@@ -1,31 +1,48 @@
 :root {
   --blue: #4a728e;
-  --cream: #f1d8b9;
+  --cream: #dacdb8;
+  --light-gray: #f6efe6;
   --dark-teal: #222e34;
-  --light-gold: #ffefd4;
+  --light-gold: #f7d69d;
   --gold: #e2b479;
   --navy: #101323;
-  --off-white: #fffcf7;
+  --white: #fffcf6;
   --default-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 html {
-  background-color: var(--off-white);
+  background-color: var(--white);
   color: var(--navy);
+  font-family: 'Poppins', 'Arial', sans-serif;
   font-size: 10px;
+  font-weight: 400;
 }
 
-div {
-  font-family: 'Work Sans', sans-serif;
+input,
+textarea,
+button {
+  font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+input,
+textarea {
+  background-color: var(--white);
+  border: 1px solid var(--navy);
+  border-radius: 2px;
+  padding: 0.5rem;
 }
 
 a {
-  color: var(--blue);
+  color: var(--navy);
 }
 
+a:visited {
+  color: var(--dark-teal);
+}
+
+/* Add Ms Madi as fontStyle inline to help with loading time */
 .cursive-font {
-  font-family: 'Ms Madi', cursive;
-  font-size: 5.5rem;
+  font-size: 5.4rem;
   letter-spacing: 0.4px;
 }
 
@@ -35,6 +52,11 @@ a {
 
 .handwriting-font {
   font-family: 'Handlee', cursive;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 2.6rem;
 }
 
 .App {
@@ -61,7 +83,7 @@ a {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: var(--off-white);
+  color: var(--white);
 }
 
 .App-link {

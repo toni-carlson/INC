@@ -10,6 +10,18 @@ function WhoWeHelp() {
         <h1>
           Who We Help
         </h1>
+        <div className='banner'>
+          <p>
+            Braincore can help people with a variety of different ailments, such as&nbsp;
+            {
+              ailmentsInfo.map((info, index) => {
+                const punctuation = index === ailmentsInfo.length - 1 ? '.' : ', ';
+                return info.heading.toLowerCase() + punctuation;
+              }
+            )
+          }
+          </p>
+        </div>
         <div className='summary-passage'>
           <h2>How can BrainCore Neurofeedback help with different ailments?</h2>
           <p>
@@ -29,7 +41,6 @@ function WhoWeHelp() {
             ailmentsInfo.map((info, index) =>
               <HoverableCard
                 key={index}
-                id={`section-${index}`}
                 icon={info.icon}
                 heading={info.heading}
                 subheading={info.subheading}

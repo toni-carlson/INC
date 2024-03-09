@@ -1,15 +1,64 @@
+.contact-banner {
+    background: var(--navy);
+    border: 3px solid var(--navy);
+    border-radius: 4px;
+    color: var(--light-gray);
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 1.2rem 8rem;
+    text-align: center;
+    width: max-content;
+}
+
 .two-col-display {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
+    margin: 2rem auto;
+    width: max-content;
 }
 
-.left-col {
-    max-width: 60rem;
+.left-col p {
+    margin-top: 0;
 }
 
 .right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: max-content;
+    height: max-content;
     width: 100%;
+}
+
+.left-col,
+.contact-info,
+.office-hours {
+    background: var(--light-gray);
+    border-radius: 4px;
+    border: 3px solid var(--navy);
+    height: max-content;
+    width: max-content;
+}
+
+.contact-info {
+    max-width: 30.8rem;
+}
+
+.left-col {
+    min-width: 60rem;
+    padding: 4rem 8rem;
+}
+
+.contact-info,
+.office-hours {
+    padding: 2rem 4rem;
+}
+
+.right-col h2 {
+    font-size: 2.2rem;
+    font-style: italic;
+    margin-top: 0;
 }
 
 .form-input {
@@ -19,8 +68,9 @@
 }
 
 .form-input label {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
 }
 
 .contact-info-list,
@@ -31,36 +81,39 @@
 
 .office-hours-list li,
 .contact-info-list li {
+    align-items: center;
     display: flex;
-    gap: 1rem;
+    gap: 1.8rem;
     padding: 0.6rem 0;
 }
 
-p {
-    font-size: 16px;
-    line-height: 2rem;
+.office-hours-list li {
+    justify-content: space-between;
 }
 
-label,
 input,
 textarea {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.required {
+    font-size: 1.4rem;
 }
 
 .submit-form {
     background-color: var(--navy);
-    border: 1px solid var(--navy);
+    border: 1px solid var(--gold);
     border-radius: 0.8rem;
     box-shadow: rgba(135, 110, 83, 0.3) 0 1px 2px 0px, rgba(135, 110, 83, 0.15) 0 2px 6px 2px;
-    color: var(--off-white);
+    color: var(--white);
     cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: 500;
     line-height: 17px;
+    margin-top: 1rem;
     padding: 13px 29px;
     text-decoration: none;
-    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .submit-form:is(:hover, :focus-visible) {
