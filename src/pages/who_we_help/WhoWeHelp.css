@@ -8,7 +8,7 @@ h1 {
     background: var(--navy);
     border: 3px solid var(--navy);
     border-radius: 4px;
-    color: var(--light-gray);
+    color: var(--white);
     margin-bottom: 3rem;
     padding: 1.2rem 1.8rem;
     text-align: center;
