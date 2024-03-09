@@ -1,6 +1,10 @@
 .page-footer {
+    align-items: center;
     background-color: var(--navy);
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     margin-top: auto;
     padding: 2rem;
     text-align: center;

@@ -8,7 +8,6 @@ function PageFooter() {
   return (
      <footer className='page-footer'>
         <SiteMap />
-        <br /><br />
         <a
             href='https://www.facebook.com/IntegrativeMindConnections/'
             target='blank'
@@ -17,8 +16,7 @@ function PageFooter() {
             <img src={FbLogo} className='fb-logo' alt='Facebook' />
             Facebook
         </a>
-        <br /><br />
-        &copy; { orgName }, LLC, All Rights Reserved.
+        <span>&copy; { orgName }, LLC, All Rights Reserved.</span>
      </footer>
   );
 }
