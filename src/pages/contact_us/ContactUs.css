@@ -5,7 +5,7 @@
     color: var(--light-gray);
     margin: auto;
     margin-bottom: 3rem;
-    padding: 1.2rem 8rem;
+    padding: 1.2rem 10rem;
     text-align: center;
     width: max-content;
 }
@@ -43,6 +43,10 @@
 
 .contact-info {
     max-width: 30.8rem;
+}
+
+.office-hours {
+    min-width: 30.8rem;
 }
 
 .left-col {
@@ -96,7 +100,8 @@ textarea {
     font-size: 1.6rem;
 }
 
-.required {
+.required,
+.location-details {
     font-size: 1.4rem;
 }
 

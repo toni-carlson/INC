@@ -43,16 +43,28 @@ function ContactUs() {
                         </span>
                      </li>
                   </ul>
-                  <p>
+                  <span className='location-details'>
                      Integrative Mind Connections is located in Brownsburg, Indiana on the west side of Indianapolis
                      just off I-74 in the Data Comm building.
-                  </p>
+                  </span>
                </div>
                <div className="office-hours">
                   <h2>Office Hours</h2>
                   <ul className='office-hours-list'>
                      <li>
-                        <span>Monday - Thursday</span>
+                        <span>Monday</span>
+                        <span>9:30AM - 5:30PM</span>
+                     </li>
+                     <li>
+                        <span>Tuesday</span>
+                        <span>9:30AM - 5:30PM</span>
+                     </li>
+                     <li>
+                        <span>Wednesday</span>
+                        <span>9:30AM - 5:30PM</span>
+                     </li>
+                     <li>
+                        <span>Thursday</span>
                         <span>9:30AM - 5:30PM</span>
                      </li>
                      <li>
