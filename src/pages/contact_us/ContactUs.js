@@ -27,7 +27,7 @@ function ContactUs() {
                   <ul className='contact-info-list'>
                      <li>
                         <FontAwesomeIcon icon={faPhone} />
-                        <span>(317) 339-4998</span>
+                        <a href="tel:3173394998">(317) 339-4998</a>
                      </li>
                      <li>
                         <FontAwesomeIcon icon={faEnvelope} />
@@ -37,10 +37,10 @@ function ContactUs() {
                      </li>
                      <li>
                         <FontAwesomeIcon icon={faMap} />
-                        <span>
+                        <a href="https://www.google.com/maps/place/Integrative+Mind+Connections/@39.8543801,-86.3839538,15z/data=!4m6!3m5!1s0x886cadce12aff7e7:0x609a69501030ec02!8m2!3d39.8543801!4d-86.3839538!16s%2Fg%2F11gr62j37r?entry=ttu" target="_blank">
                            680 Patrick Place <br />
                            Brownsburg, Indiana 46112
-                        </span>
+                        </a>
                      </li>
                   </ul>
                   <span className='location-details'>

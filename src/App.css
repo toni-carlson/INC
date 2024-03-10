@@ -14,7 +14,7 @@ html {
   background-color: var(--white);
   color: var(--navy);
   font-family: 'Poppins', 'Arial', sans-serif;
-  font-size: 10px;
+  font-size: 10px; /* Set pixe; ratio for rem values */
   font-weight: 400;
 }
 
@@ -55,7 +55,7 @@ a:visited {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.6rem;
 }
 
