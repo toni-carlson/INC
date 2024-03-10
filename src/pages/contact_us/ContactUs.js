@@ -4,6 +4,7 @@ import ContactForm from './ContactForm';
 import FrameLayout from '../../frame_layout/FrameLayout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
+import { officeHours } from '../../constants';
 
 function ContactUs() {
    return (
@@ -51,30 +52,14 @@ function ContactUs() {
                <div className="office-hours">
                   <h2>Office Hours</h2>
                   <ul className='office-hours-list'>
-                     <li>
-                        <span>Monday</span>
-                        <span>9:30AM - 5:30PM</span>
-                     </li>
-                     <li>
-                        <span>Tuesday</span>
-                        <span>9:30AM - 5:30PM</span>
-                     </li>
-                     <li>
-                        <span>Wednesday</span>
-                        <span>9:30AM - 5:30PM</span>
-                     </li>
-                     <li>
-                        <span>Thursday</span>
-                        <span>9:30AM - 5:30PM</span>
-                     </li>
-                     <li>
-                        <span>Friday</span>
-                        <span>9:30AM - 4:00PM</span>
-                     </li>
-                     <li>
-                        <span>Saturday & Sunday</span>
-                        <span>CLOSED</span>
-                     </li>
+                     {
+                        Object.keys(officeHours).map((day, index) =>
+                           <li key={index}>
+                              <span>{day}</span>
+                              <span>{officeHours[day]}</span>
+                           </li>
+                        )
+                     }
                   </ul>
                </div>
             </div>

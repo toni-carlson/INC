@@ -1,6 +1,14 @@
 import { faAward, faChartLine, faCloudShowersHeavy, faGears, faHammer, faHeartCrack, faHeartPulse, faLightbulb, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 export const orgName = 'Integrative Neurofeedback &\xa0Counseling';
+export const officeHours = {
+    Monday: '9:30AM - 5:30PM',
+    Tuesday: '9:30AM - 5:30PM',
+    Wednesday: '9:30AM - 5:30PM',
+    Thursday: '9:30AM - 5:30PM',
+    Friday: '9:30AM - 4:00PM',
+    'Saturday & Sunday': 'CLOSED'
+};
 export const ailmentsInfo = [
     {
       icon: faMagnifyingGlass,
@@ -113,4 +121,4 @@ export const ailmentsInfo = [
         circuitry. Dysfunction in these circuits leads to characteristic biological, psychological, social and spiritual\
         manifestations. This is reflected in an individual pathologically pursuing reward and/or relief by other behaviors.'
     }
-  ];
+];
