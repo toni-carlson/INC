@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './HoverableCard.css';
+import './HoverableCard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 

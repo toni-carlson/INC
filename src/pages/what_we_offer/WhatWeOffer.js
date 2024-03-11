@@ -1,5 +1,5 @@
 import React from 'react';
-import './WhatWeOffer.css';
+import './WhatWeOffer.scss';
 import FrameLayout from '../../frame_layout/FrameLayout';
 
 function WhatWeOffer() {

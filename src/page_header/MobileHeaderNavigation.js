@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import NavLinks from './NavLinks';
-import './MobileHeaderNavigation.css';
+import './MobileHeaderNavigation.scss';
 
 function MobileHeaderNavigation() {
     const container = useRef(null);

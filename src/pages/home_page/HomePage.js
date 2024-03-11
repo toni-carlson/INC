@@ -1,5 +1,5 @@
 import React from 'react';
-import './HomePage.css';
+import './HomePage.scss';
 import FrameLayout from '../../frame_layout/FrameLayout';
 import HomePageHeader from './HomePageHeader';
 import HelpingHand from '../../images/helping-hand.jpg';
@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function HomePage() {
   return (
-    <FrameLayout customHeader={<HomePageHeader />}>
+    <FrameLayout pageName='home-page' customHeader={<HomePageHeader />}>
         <div className='quote'>
             <p className='handwriting-font'>
                 “Neurofeedback should play a major therapeutic role in many difficult areas. In my opinion,

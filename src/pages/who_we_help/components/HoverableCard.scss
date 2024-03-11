@@ -1,0 +1,115 @@
+.who-we-help-page {
+    --hover-shadow: 0 0 10px 2px var(--gold), 0 0 8px 4px var(--light-gold);
+
+    .hoverable-container {
+        align-items: center;
+        background-color: var(--light-gray);
+        border: 3px solid var(--navy);
+        border-radius: 4px;
+        box-shadow: var(--default-shadow);
+        color: var(--navy);
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        height: 26rem;
+        min-width: 45rem;
+        padding: 0;
+        transition: all .4s ease;
+
+        &:is(:hover, :focus-visible) {
+            box-shadow: var(--hover-shadow);
+            outline-offset: -3px;
+
+            svg, h2 {
+                transform: scale(1.15);
+                transition: transform .4s ease;
+                /* @TODO: Fix this.. it blurs for a sec */
+            }
+        }
+
+        &.hovered {
+            box-shadow: var(--hover-shadow);
+            cursor: default;
+        }
+
+        > h2 {
+            font-size: 2.2rem;
+            margin-top: 2.5rem;
+        }
+
+        .icon {
+            font-size: 5rem;
+        }
+    }
+
+    .hovered-contents {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: var(--white);
+
+        .contents-header {
+            display: flex;
+            border-bottom: 1px solid var(--cream);
+
+            h3 {
+                font-size: 1.8rem;
+                margin: 1rem;
+                text-align: left;
+            }
+
+            .close-button {
+                background-color: inherit;
+                border: 0;
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                gap: 3px;
+                font-size: 16px;
+                font-weight: 500;
+                margin-left: auto;
+                padding: 6px;
+
+                .close-label {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin: 0;
+            overflow-y: auto;
+            padding: 1rem;
+            text-align: left;
+
+            &::-webkit-scrollbar {
+                width: 1.8rem;
+            }
+
+            &::-webkit-scrollbar-track {
+                border-left: 1.2px solid var(--dark-teal);
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: var(--light-gold);
+                border: 1.6px solid var(--dark-teal);
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px var(--gold);
+            }
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .hoverable-container {
+            min-width: 100%;
+        }
+    }
+}

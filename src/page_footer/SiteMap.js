@@ -1,5 +1,5 @@
 import React from 'react';
-import './SiteMap.css';
+import './SiteMap.scss';
 import { ailmentsInfo } from '../constants';
 
 function SiteMap() {

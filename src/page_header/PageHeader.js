@@ -4,12 +4,12 @@ import { orgName } from '../constants';
 import Logo from '../images/white-logo-outlined.png';
 import NavLinks from './NavLinks';
 import MobileHeaderNavigation from './MobileHeaderNavigation.js';
-import './PageHeader.css';
+import './PageHeader.scss';
 
 function PageHeader() {
   return (
-     <header className='page-header-topbar'>
-        <div className='background-dim-overlay'></div>
+     <header className='page-header'>
+        <div className='header-dim-overlay'></div>
         <img
           src={Logo}
           alt={orgName + ' logo'}

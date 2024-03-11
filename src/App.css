@@ -59,6 +59,17 @@ p {
   line-height: 2.6rem;
 }
 
+.banner {
+  background: var(--navy);
+  border: 3px solid var(--navy);
+  border-radius: 4px;
+  color: var(--white);
+  margin: auto;
+  margin-bottom: 3rem;
+  padding: 3rem 10rem;
+  text-align: center;
+}
+
 .App {
   /* font-family: "Plus Jakarta Sans"; */
   font-size: 1.3rem;

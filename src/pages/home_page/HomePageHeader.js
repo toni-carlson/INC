@@ -1,5 +1,5 @@
 import React from 'react';
-import './HomePage.css';
+import './HomePageHeader.scss';
 import PageHeader from '../../page_header/PageHeader.js';
 import { orgName } from '../../constants';
 
@@ -8,7 +8,7 @@ function HomePageHeader() {
   orgNameEnd = orgNameEnd.join(' ');
 
   return (
-    <div className="section header">
+    <div className="section header home-page-header">
         <div className="background-dim-overlay"></div>
         <PageHeader />
         <div className="header-content">

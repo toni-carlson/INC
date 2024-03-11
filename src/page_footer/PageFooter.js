@@ -1,5 +1,5 @@
 import React from 'react';
-import './PageFooter.css';
+import './PageFooter.scss';
 import SiteMap from './SiteMap.js';
 import FbLogo from '../images/facebook-icon.png';
 import { orgName } from '../constants';

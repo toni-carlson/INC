@@ -1,0 +1,46 @@
+.home-page-header {
+    background: url("../../images/farmhouse-style-bg.png") no-repeat top;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--white);
+    flex-grow: 1;
+    height: max-content;
+    min-height: 66rem;
+    padding-top: 2rem;
+    position: relative;
+    text-shadow: 0 0 12px var(--navy), 0 0 16px var(--navy), 0 0 4px var(--gold);
+    width: 100%;
+
+    .background-dim-overlay {
+        background-color: var(--navy);
+        height: 100%;
+        left: 0;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .header-content {
+        margin: 20rem auto 0;
+        max-width: 102rem;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+
+        .welcome {
+            font-size: 6.4rem;
+            line-height: 3rem;
+            margin-bottom: 6rem;
+        }
+
+        .welcome-org-name {
+            font-size: 6.8rem;
+            margin: 0 0 8rem;
+        }
+
+        .cursive-font.small {
+            line-height: normal;
+        }
+    }
+}

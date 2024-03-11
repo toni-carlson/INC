@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContactUs.css';
+import './ContactUs.scss';
 import ContactForm from './ContactForm';
 import FrameLayout from '../../frame_layout/FrameLayout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,24 +8,24 @@ import { officeHours } from '../../constants';
 
 function ContactUs() {
    return (
-      <FrameLayout>
+      <FrameLayout pageName="contact-us-page">
          <h1>
             Contact Us
          </h1>
-         <div className='contact-banner'>
+         <div className='banner'>
             <div className='cursive-font' style={{ fontFamily: 'Ms Madi' }}>Your better tomorrow begins today!</div>
          </div>
          <div className='two-col-display'>
-            <div className='left-col'>
+            <div className='left-col card-style'>
                <p>
                   Contact us today to schedule your FREE in-office consultation.
                </p>
                <ContactForm />
             </div>
             <div className='right-col'>
-               <div className="contact-info">
+               <div className="contact-info card-style">
                   <h2>Contact Information</h2>
-                  <ul className='contact-info-list'>
+                  <ul className='info-list'>
                      <li>
                         <FontAwesomeIcon icon={faPhone} />
                         <a href="tel:3173394998">(317) 339-4998</a>
@@ -49,9 +49,9 @@ function ContactUs() {
                      just off I-74 in the Data Comm building.
                   </span>
                </div>
-               <div className="office-hours">
+               <div className="office-hours card-style">
                   <h2>Office Hours</h2>
-                  <ul className='office-hours-list'>
+                  <ul className='info-list'>
                      {
                         Object.keys(officeHours).map((day, index) =>
                            <li key={index}>
