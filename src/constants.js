@@ -11,13 +11,22 @@ export const officeHours = {
 };
 export const ailmentsInfo = [
     {
-      icon: faMagnifyingGlass,
-      heading: 'Attention and Focus',
-      subheading: 'What does a lack of attention and focus look like?',
-      content: `What attention and focus issues look like in a person struggling with this disorder
-        is the inability to focus or concentrate, becoming easily distracted, overwhelmed or
-        frustrated. Attention and focus problems can cause anger outbursts, difficulty completing
-        tasks, restlessness and the inability to socially engage or connect.`
+      icon: faHeartCrack,
+      heading: 'Post Trauma',
+      subheading: 'Can I live a normal life again after trauma?',
+      content: `Post Trauma often occurs after a stressful or traumatic event leaving a wake of symptoms in its
+        path. From mental stress and negative moods to fear, guilt and shame, the emotional toll impacts daily
+        lives, careers and relationships. As a result, most people who suffer from post trauma are looking for
+        an effective way to treat their symptoms so they can get back to living a normal life. Unfortunately,
+        many sufferers experience only limited benefit after trying various therapies and medication. Post trauma
+        is a disorder based in the brain. With post trauma, a severe stress response is triggered, the challenge
+        is to teach the brain to turn off the stress response. Research shows that the traumatic stress experienced
+        by those suffering from post trauma has a lasting change on the brain. It affects the amygdala involved in
+        emotional memory, the hippocampus responsible for long term memory, and prefrontal cortex which modulates
+        emotion. Each of these centers change, negatively impacting brainwave function. Current treatment options
+        include talk therapy and medication but each have their limitations. Talk therapy can take a very long time
+        to resolve the trauma as many suffers aren't always aware of the trauma. Medication comes with many side
+        effects and is unable to restore healthy brainwave function.`
     },
     {
       icon: faHeartPulse,
@@ -39,6 +48,15 @@ export const ailmentsInfo = [
         Research at Keck Imaging Labs at the University of Wisconsin shows that negative mood people
         experience a reduction of activity in the left side of the brain. This is the side responsible for
         engaging in positive moods. When the brainwaves are abnormal, your mood can become abnormal.`
+    },
+    {
+      icon: faMagnifyingGlass,
+      heading: 'Attention and Focus',
+      subheading: 'What does a lack of attention and focus look like?',
+      content: `What attention and focus issues look like in a person struggling with this disorder
+        is the inability to focus or concentrate, becoming easily distracted, overwhelmed or
+        frustrated. Attention and focus problems can cause anger outbursts, difficulty completing
+        tasks, restlessness and the inability to socially engage or connect.`
     },
     {
       icon: faGears,
@@ -80,37 +98,19 @@ export const ailmentsInfo = [
         results are a variety of symptoms that take their toll on your life including inability to focus,
         mood swings and throbbing pain.`
     },
-    {
-      icon: faChartLine,
-      heading: 'Peak Performance',
-      subheading: 'You work your body — what about your mind?',
-      content: `Whether you are a professional athlete, a top executive, a weekend warrior, a student athlete,
-        professional or performer, you know that peak performance is essential to your success. But how do you
-        achieve peak performance? The more that is at stake, the greater the need for not only physical training,
-        but brain training for increased brain health as well. Let's face it, performing at your peak comes with
-        high demands. These physical, mental and emotional impacts often trigger the fight or flight response
-        within your body, which will steal your ability to succeed. When you are in a prolonged state of stress
-        due to the high demands of performing at optimal states, your brain function is impacted. The longer the
-        impact, the greater the imbalance, which leads to decreased function and performance.`
-    },
-    {
-      icon: faHeartCrack,
-      heading: 'Post Trauma',
-      subheading: 'Can I live a normal life again after trauma?',
-      content: `Post Trauma often occurs after a stressful or traumatic event leaving a wake of symptoms in its
-        path. From mental stress and negative moods to fear, guilt and shame, the emotional toll impacts daily
-        lives, careers and relationships. As a result, most people who suffer from post trauma are looking for
-        an effective way to treat their symptoms so they can get back to living a normal life. Unfortunately,
-        many sufferers experience only limited benefit after trying various therapies and medication. Post trauma
-        is a disorder based in the brain. With post trauma, a severe stress response is triggered, the challenge
-        is to teach the brain to turn off the stress response. Research shows that the traumatic stress experienced
-        by those suffering from post trauma has a lasting change on the brain. It affects the amygdala involved in
-        emotional memory, the hippocampus responsible for long term memory, and prefrontal cortex which modulates
-        emotion. Each of these centers change, negatively impacting brainwave function. Current treatment options
-        include talk therapy and medication but each have their limitations. Talk therapy can take a very long time
-        to resolve the trauma as many suffers aren't always aware of the trauma. Medication comes with many side
-        effects and is unable to restore healthy brainwave function.`
-    },
+    // {
+    //   icon: faChartLine,
+    //   heading: 'Peak Performance',
+    //   subheading: 'You work your body — what about your mind?',
+    //   content: `Whether you are a professional athlete, a top executive, a weekend warrior, a student athlete,
+    //     professional or performer, you know that peak performance is essential to your success. But how do you
+    //     achieve peak performance? The more that is at stake, the greater the need for not only physical training,
+    //     but brain training for increased brain health as well. Let's face it, performing at your peak comes with
+    //     high demands. These physical, mental and emotional impacts often trigger the fight or flight response
+    //     within your body, which will steal your ability to succeed. When you are in a prolonged state of stress
+    //     due to the high demands of performing at optimal states, your brain function is impacted. The longer the
+    //     impact, the greater the imbalance, which leads to decreased function and performance.`
+    // },
     {
       icon: faAward,
       heading: 'Substance Abuse',
