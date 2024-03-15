@@ -13,8 +13,8 @@ export const ailmentsInfo = [
     {
       icon: faMagnifyingGlass,
       heading: 'Attention and Focus',
-      subheading: `What does a lack of attention and focus look like?',
-      content: 'What attention and focus issues look like in a person struggling with this disorder
+      subheading: 'What does a lack of attention and focus look like?',
+      content: `What attention and focus issues look like in a person struggling with this disorder
         is the inability to focus or concentrate, becoming easily distracted, overwhelmed or
         frustrated. Attention and focus problems can cause anger outbursts, difficulty completing
         tasks, restlessness and the inability to socially engage or connect.`
