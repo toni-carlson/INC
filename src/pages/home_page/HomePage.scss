@@ -4,7 +4,7 @@
         padding: 8rem 6%;
         text-align: left;
 
-        h2 {
+        h2:not(.company-name) {
             font-size: 3.2rem;
             margin-top: 0;
         }
