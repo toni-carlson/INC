@@ -29,15 +29,13 @@ function HomePage() {
                 <span className='gold-text'> we are here for you!</span>
             </h2>
             <ul>
-                <li>Attention and Focus</li>
-                <li>Mental Stress</li>
-                <li>Negative Moods</li>
-                <li>Sleep Issues</li>
-                <li>Memory</li>
-                <li>Headaches</li>
-                <li>Peak Performance</li>
-                <li>Post Trauma</li>
-                <li>Substance Abuse</li>
+                {
+                    ailmentsInfo.map((info, index) =>
+                    <li key={index}>
+                        {info.heading}
+                    </li>
+                    )
+                }
             </ul>
             <p>
                 Whatever mental, emotional, or neurological challenge you or someone you love might be
