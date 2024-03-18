@@ -58,13 +58,13 @@ function HomePage() {
             <div className="who-we-help-links">
                 {
                     ailmentsInfo.map((info, index) =>
-                        <a
+                        <Link
                             key={index}
-                            href={'/whowehelp#' + info.heading.replaceAll(" ", "-").toLowerCase()}
+                            to={'/whowehelp#' + info.heading.replaceAll(" ", "-").toLowerCase()}
                         >
                             <FontAwesomeIcon icon={info.icon} className='icon' />
                             <span>{info.heading}</span>
-                        </a>
+                        </Link>
                     )
                 }
             </div>
