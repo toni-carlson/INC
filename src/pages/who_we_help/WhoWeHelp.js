@@ -11,13 +11,15 @@ function WhoWeHelp() {
           Who We Help
         </h1>
         <div className='banner'>
-          Braincore can help people with a variety of different ailments, such as&nbsp;
-          {
-            ailmentsInfo.map((info, index) => {
-              const punctuation = index === ailmentsInfo.length - 1 ? '.' : ', ';
-              return info.heading.toLowerCase() + punctuation;
-            })
-          }
+          <div className='contents'>
+            Braincore can help people with a variety of different ailments, such as&nbsp;
+            {
+              ailmentsInfo.map((info, index) => {
+                const punctuation = index === ailmentsInfo.length - 1 ? '.' : ', ';
+                return info.heading.toLowerCase() + punctuation;
+              })
+            }
+          </div>
         </div>
         <div className='summary-passage'>
           <h2>How can BrainCore Neurofeedback help with different ailments?</h2>

@@ -66,8 +66,13 @@ p {
   color: var(--white);
   margin: auto;
   margin-bottom: 3rem;
-  padding: 3rem 10rem;
+  padding: 3rem 0;
   text-align: center;
+
+  .contents {
+    max-width: 80%;
+    margin: auto;
+  }
 }
 
 .App {

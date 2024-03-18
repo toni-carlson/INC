@@ -13,7 +13,7 @@ function ContactUs() {
             Contact Us
          </h1>
          <div className='banner'>
-            <div className='cursive-font' style={{ fontFamily: 'Ms Madi' }}>Your better tomorrow begins today!</div>
+            <div className='cursive-font contents' style={{ fontFamily: 'Ms Madi' }}>Your better tomorrow begins today!</div>
          </div>
          <div className='two-col-display'>
             <div className='left-col card-style'>
