@@ -79,7 +79,7 @@ function HomePage() {
                 <p className='contact-today-text'>
                     Contact us today for a FREE consultation in office!
                 </p>
-                <a href='/contactus' className='schedule-now'>Schedule now&nbsp;&nbsp;&gt;</a>
+                <Link to='/contactus' className='schedule-now'>Schedule now&nbsp;&nbsp;&gt;</Link>
             </div>
         </div>
     </FrameLayout>

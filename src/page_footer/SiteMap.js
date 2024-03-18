@@ -6,23 +6,26 @@ function SiteMap() {
   return (
     <nav className='site-map'>
         <div className='link-section'>
-          <h3><a href='/'>Home</a></h3>
+          <h3>
+            <Link to='/'>Home</Link>
+          </h3>
         </div>
         <div className='link-section'>
-          <h3><a href='/whowehelp'>Who we help</a></h3>
+          <h3>
+            <Link to='/whowehelp'>Who we help</Link>
+          </h3>
           {
             ailmentsInfo.map((info, index) =>
-              <a
-                key={index}
-                href={'/whowehelp#' + info.heading.replaceAll(" ", "-").toLowerCase()}
-              >
+              <Link key={index} to={'/whowehelp#' + info.heading.replaceAll(" ", "-").toLowerCase()}>
                 {info.heading}
-              </a>
+              </Link>
             )
           }
         </div>
         <div className='link-section'>
-            <h3><a href='/contactus'>Contact us</a></h3>
+            <h3>
+              <Link to='/contactus'>Contact us</Link>
+            </h3>
         </div>
     </nav>
   );
