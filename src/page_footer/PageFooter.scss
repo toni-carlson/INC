@@ -1,0 +1,35 @@
+.page-footer {
+    align-items: center;
+    background-color: var(--navy);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: auto;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+
+    a {
+        color: var(--white);
+        text-decoration: none;
+
+        &:is(:hover, :focus-visible) {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        &.fb-link {
+            align-items: center;
+            color: #d5e2eb;
+            display: flex;
+            font-size: 1.6rem;
+            justify-content: center;
+
+            .fb-logo {
+                padding-right: 0.6rem;
+                width: 2.8rem;
+            }
+        }
+    }
+}

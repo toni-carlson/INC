@@ -1,0 +1,17 @@
+.site-map {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.link-section {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+@media screen and (max-width: 576px) {
+    .link-section {
+        width: 12rem;
+    }
+}
