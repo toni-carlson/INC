@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './HomePage.scss';
 import FrameLayout from '../../frame_layout/FrameLayout';
 import HomePageHeader from './HomePageHeader';
@@ -59,13 +60,13 @@ function HomePage() {
             <div className="who-we-help-links">
                 {
                     ailmentsInfo.map((info, index) =>
-                        <Link
+                        <HashLink
                             key={index}
                             to={'/whowehelp#' + info.heading.replaceAll(" ", "-").toLowerCase()}
                         >
                             <FontAwesomeIcon icon={info.icon} className='icon' />
                             <span>{info.heading}</span>
-                        </Link>
+                        </HashLink>
                     )
                 }
             </div>

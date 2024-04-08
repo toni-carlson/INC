@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './HoverableCard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
@@ -6,12 +7,13 @@ import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 function HoverableCard({icon, heading, subheading, children}) {
   const headingFormatted = heading.replaceAll(" ", "-").toLowerCase();
   const [isHovered, setIsHovered] = useState(false);
+  const location = useLocation();
 
-  window.addEventListener("load", () => {
-    if (window.location.href.indexOf(headingFormatted) > -1) {
+  useEffect(() => {
+    if (location.hash.includes(headingFormatted)) {
       setIsHovered(true);
     }
-  });
+  }, [location]);
 
   function toggleCard() {
     setTimeout(() => {
