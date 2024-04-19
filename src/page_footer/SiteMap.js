@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './SiteMap.scss';
 import { ailmentsInfo } from '../constants';
 
@@ -17,9 +18,9 @@ function SiteMap() {
           </h3>
           {
             ailmentsInfo.map((info, index) =>
-              <Link key={index} to={'/whowehelp#' + info.heading.replaceAll(" ", "-").toLowerCase()}>
+              <HashLink key={index} to={'/whowehelp#' + info.heading.replaceAll(" ", "-").toLowerCase()}>
                 {info.heading}
-              </Link>
+              </HashLink>
             )
           }
         </div>
