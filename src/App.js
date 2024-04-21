@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from "./ScrollToTop";
 import HomePage from './pages/home_page/HomePage';
 import WhoWeHelp from './pages/who_we_help/WhoWeHelp';
