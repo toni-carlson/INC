@@ -1,6 +1,6 @@
 import { faAward, faChartLine, faCloudShowersHeavy, faGears, faHammer, faHeartCrack, faHeartPulse, faLightbulb, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-export const orgName = 'Integrative Neurofeedback &\xa0Counseling';
+export const orgName = 'Integrative Mind Connections';
 export const officeHours = {
     Monday: '9:30AM - 5:30PM',
     Tuesday: '9:30AM - 5:30PM',
