@@ -13,9 +13,9 @@ function HomePage() {
     <FrameLayout pageName='home-page' customHeader={<HomePageHeader />}>
         <div className='quote'>
             <p className='handwriting-font'>
-                “Neurofeedback should play a major therapeutic role in many difficult areas. In my opinion,
+                "Neurofeedback should play a major therapeutic role in many difficult areas. In my opinion,
                 if any medication had demonstrated such a wide spectrum of efficacy it would be universally
-                accepted and widely used.'
+                accepted and widely used."
             </p>
             <div className='author-name'>
                 Dr. Frank Duffy
