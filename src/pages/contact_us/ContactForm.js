@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContactForm() {
    return (
-        <form action='https://formsubmit.co/valeriejmeeboer@gmail.com' method='POST' className='contact-form-container'>
+        <form action='https://formsubmit.co/integrative.mind.conn@gmail.com' method='POST' className='contact-form-container'>
             <span className="required">All fields are required.</span>
             <div className='input-container'>
                 <label htmlFor='form-filler-name'>Your name</label>
