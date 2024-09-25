@@ -92,6 +92,11 @@
             textarea {
                 font-size: 1.6rem;
             }
+
+            textarea {
+                min-height: 25px;
+                resize: vertical;
+            }
         }
 
         .submit-form {
