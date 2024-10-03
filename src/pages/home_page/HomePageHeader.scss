@@ -22,8 +22,11 @@
     }
 
     .header-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
         margin: 20rem auto 0;
-        max-width: 102rem;
+        max-width: max-content;
         position: relative;
         text-align: center;
         z-index: 1;
@@ -31,12 +34,11 @@
         .welcome {
             font-size: 6.4rem;
             line-height: 3rem;
-            margin-bottom: 6rem;
         }
 
         .welcome-org-name {
             font-size: 6.8rem;
-            margin: 0 0 8rem;
+            margin: 0;
         }
 
         .cursive-font.small {

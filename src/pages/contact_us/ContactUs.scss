@@ -100,6 +100,40 @@
             }
         }
 
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.8rem;
+            gap: 4px;
+
+            .checkbox-container {
+                align-items: center;
+                display: inline-flex;
+                min-height: 32px;
+
+                label {
+                    cursor: pointer;
+                    user-select: none;
+                }
+
+                input[type="checkbox"] {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                }
+
+                input[type="phone"],
+                input[type="email"] {
+                    margin-left: 8px;
+                    max-width: 100%;
+                }
+
+                input[type="email"] {
+                    min-width: 50%;
+                }
+            }
+        }
+
         .submit-form {
             background-color: var(--navy);
             border: 1px solid var(--gold);

@@ -4,9 +4,6 @@ import PageHeader from '../../page_header/PageHeader.js';
 import { orgName } from '../../constants';
 
 function HomePageHeader() {
-  let [orgNameStart, ...orgNameEnd] = orgName.split(' ');
-  orgNameEnd = orgNameEnd.join(' ');
-
   return (
     <div className="section header home-page-header">
         <div className="background-dim-overlay"></div>
@@ -14,8 +11,7 @@ function HomePageHeader() {
         <div className="header-content">
             <div className="cursive-font welcome" style={{ fontFamily: 'Ms Madi' }}>Welcome to</div>
             <h1 className="welcome-org-name">
-              { orgNameStart }<br/>
-              { orgNameEnd }
+              { orgName }
             </h1>
             <div className="cursive-font small" style={{ fontFamily: 'Ms Madi' }}>
                 Repairing&nbsp;minds. Rebuilding&nbsp;lives. Restoring&nbsp;hope.

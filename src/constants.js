@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { faAward, faChartLine, faCloudShowersHeavy, faGears, faHammer, faHeartCrack, faHeartPulse, faLightbulb, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 export const orgName = 'Integrative Mind Connections';
