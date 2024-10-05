@@ -37,7 +37,7 @@ function ContactForm() {
             </fieldset>
             <div className='input-container'>
                 <label htmlFor='client-name'>Who would we be treating?</label>
-                <input id='client-name' type='text' name='clientname' placeholder='Potential client name' required />
+                <input id='client-name' type='text' name='clientname' placeholder='Potential client name' />
             </div>
             <div className='input-container'>
                 <label htmlFor='message-textarea'>How can we help?</label>
@@ -46,7 +46,6 @@ function ContactForm() {
                     placeholder="Be as vague or specific as you'd like!"
                     name='message'
                     rows='10'
-                    required
                 ></textarea>
             </div>
             <button type='submit' className='submit-form'>Submit your information!</button>
