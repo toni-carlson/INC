@@ -6,7 +6,6 @@ function ContactForm() {
 
     function showInputField(e) {
         const { name, checked } = e.target;
-        console.log("FOUND CLICK", name, checked);
 
         if (name === "email") {
             setShowEmailInput(checked);
