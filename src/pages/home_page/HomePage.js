@@ -30,6 +30,14 @@ function HomePage() {
                 Whatever situation you find yourself in,
                 <span className='gold-text'> we are here for you!</span>
             </h2>
+            <p>
+                Whatever mental, emotional, or neurological challenge you or someone you love might be
+                struggling with, we commit to listen fully, genuinely care, and walk alongside of you as
+                you move towards resolving your challenges.
+            </p>
+            <p>
+                We can help with:
+            </p>
             <ul>
                 {
                     ailmentsInfo.map((info, index) =>
@@ -40,12 +48,7 @@ function HomePage() {
                 }
             </ul>
             <p>
-                Whatever mental, emotional, or neurological challenge you or someone you love might be
-                struggling with, we commit to listen fully, genuinely care, and walk alongside of you as
-                you move towards resolving your challenges.
-            </p>
-            <p>
-                After your free, personal consultation, we begin with an initial assessment that will indicate
+                After your free consultation, we begin with an initial assessment that will indicate
                 what areas of your brain need to be strengthened. From there, we will customize our approach to
                 meet your specific, individual needs through a variety of treatment interventions and support
                 protocols to augment the neurofeedback therapy including individual counseling and coaching,
